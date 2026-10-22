@@ -20,10 +20,9 @@ Persona Studio is a desktop-first user persona development interface assembled f
 
 ## Run locally
 
-1. Extract the ZIP.
-2. Open the folder in VS Code.
-3. Recommended: use the VS Code Live Server extension and open `index.html` with Live Server.
-4. Alternatively, open `index.html` directly in a modern browser. Some browser restrictions may affect local file behaviour.
+1. Open the folder in VS Code.
+2. Recommended: use the VS Code Live Server extension and open `index.html` with Live Server.
+3. Alternatively, open `index.html` directly in a modern browser. Some browser restrictions may affect local file behaviour.
 
 ## Current integration scope
 
