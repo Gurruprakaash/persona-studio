@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed":"#0f0069","surface-bright":"#f8f9ff","on-tertiary-fixed":"#2a1700","on-primary":"#ffffff","surface-container":"#e6eeff","primary-container":"#4f46e5","secondary":"#006a63","surface-dim":"#ccdbf3","background":"#f8f9ff","primary-fixed":"#e2dfff","inverse-primary":"#c3c0ff","on-surface-variant":"#464555","error":"#ba1a1a","on-primary-container":"#dad7ff","primary":"#3525cd","on-surface":"#0d1c2e","surface-tint":"#4d44e3","on-secondary-fixed-variant":"#00504a","on-tertiary-fixed-variant":"#653e00","primary-fixed-dim":"#c3c0ff","surface-container-highest":"#d5e3fc","surface-container-high":"#dce9ff","tertiary-container":"#885500","inverse-surface":"#233144","secondary-fixed":"#9cf2e8","inverse-on-surface":"#eaf1ff","on-background":"#0d1c2e","outline":"#777587","tertiary-fixed-dim":"#ffb95f","on-tertiary":"#ffffff","on-secondary-fixed":"#00201d","on-secondary-container":"#006f67","on-primary-fixed-variant":"#3323cc","outline-variant":"#c7c4d8","on-error-container":"#93000a","secondary-container":"#99efe5","error-container":"#ffdad6","on-error":"#ffffff","on-secondary":"#ffffff","surface-container-lowest":"#ffffff","surface":"#f8f9ff","surface-container-low":"#eff4ff","secondary-fixed-dim":"#80d5cb","tertiary-fixed":"#ffddb8","on-tertiary-container":"#ffd4a4","surface-variant":"#d5e3fc","tertiary":"#684000"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","gutter-lg":"2rem","margin-mobile":"1rem","gutter-sm":"1rem","gutter":"1.5rem","space-xs":"0.25rem","margin":"2rem","space-sm":"0.5rem","space-xl":"2rem","space-md":"1rem"},"fontFamily":{"headline-lg":["Inter"],"headline-sm":["Inter"],"headline-xl":["Inter"],"headline-md":["Inter"],"body-lg":["Inter"],"label-md":["Inter"],"body-md":["Inter"],"headline-xl-mobile":["Inter"],"label-sm":["Inter"],"body-sm":["Inter"]},"fontSize":{"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0","fontWeight":"400"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-[260px] bg-surface-container-lowest border-r border-outline-variant/40 z-50 flex flex-col justify-between select-none"><div class="flex flex-col flex-1 min-h-0"><div class="px-space-md py-space-md border-b border-outline-variant/30 flex items-center gap-space-sm"><img alt="Persona Studio Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VeT56ZrX5FIKjU7W3pvQom45vdo_jp7DQyvM7vTpFHOM3G1t6Zz_2x_puUzNF0RM1_NxYFq0sBrRbDN4rtuue2ArYmtLoulxhbwHHTNleCDYdOvu9Gw2FNz6krsHanOpfc_qlVG06_f3xIs2twC6g7UsVnrCKHRJl6VX1PV-LqQ8tbZHSQf85mPnarL9I3uk3CRSs-Y6KD-31Uk4_QSsSGSh3sgSx94GI-qAdbJow6-sFsnTitxnboLQ"/><div class="flex flex-col overflow-hidden"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate leading-tight">Persona Studio</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate font-normal">Research &amp; Persona Intelligence</span></div></div><nav class="flex-1 px-space-sm py-space-md overflow-y-auto space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-medium rounded-lg"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="index.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Dashboard</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="projects" href="projects.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">folder_open</span><span class="font-body-md text-body-md">Projects</span></div></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-2 transition-colors bg-primary-container text-on-primary font-medium rounded-lg" data-path="create-persona" href="create-persona.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">person_add</span><span class="font-body-md text-body-md">Create Persona</span></div><span class="material-symbols-outlined text-primary text-[18px]">add</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="persona-library" href="persona-library.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-body-md text-body-md">Persona Library</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="research-and-surveys" href="research-insights.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">quiz</span><span class="font-body-md text-body-md">Research &amp; Surveys</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="insights-and-analytics" href="research-insights.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">insights</span><span class="font-body-md text-body-md">Insights &amp; Analytics</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="compare-personas" href="compare-personas.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">compare_arrows</span><span class="font-body-md text-body-md">Compare Personas</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="reports-and-exports" href="reports.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">description</span><span class="font-body-md text-body-md">Reports &amp; Exports</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="settings.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-body-md text-body-md">Settings</span></div></a></nav></div><div class="p-space-sm border-t border-outline-variant/30 space-y-space-sm bg-surface-container-lowest"><div class="px-space-sm py-space-xs rounded-lg bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-xs overflow-hidden"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">workspaces</span><span class="font-label-md text-label-md text-on-surface font-medium truncate">FinTech UX Workspace</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">unfold_more</span></div><div class="flex items-center justify-between px-space-sm py-space-xs"><div class="flex items-center gap-space-sm overflow-hidden"><img alt="Profile" class="w-8 h-8 rounded-full object-cover flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-pQs0EIfedPPV6rHB1qeYdlav5NPjetMfKgHJ53Czj-Vs3e82F7ZAgF2yM8aSvRBdxYW1kD_LpRfWboPhr6CIYdIiK0jZ_qs_JfQMVKxcUQJ8aGzwoFjZIu4cPkMlKdAqJRIEML6U2H1EcCK_X5kvbuBHt4Ad0pWDUpFcjLW2su9Zd1_HBla9TPf1-7uWKQa91YctZKv583RHnsb52gwjqAcKOHboBnif-W0IXo20eEGg-chDjLOI"/><div class="flex flex-col overflow-hidden"><span class="font-label-md text-label-md text-on-surface font-semibold truncate leading-tight">Elena Rostova</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate font-normal">Lead UX Researcher</span></div></div><button class="p-1 text-on-surface-variant hover:text-on-surface rounded hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">more_vert</span></button></div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md border-b border-outline-variant/30 z-40 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-xs text-on-surface-variant font-body-md text-body-md"><span class="hover:text-on-surface transition-colors cursor-pointer">Workspace</span><span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span><span class="text-on-surface font-medium">Dashboard</span></div><div class="flex items-center gap-space-md"><div class="relative flex items-center w-64"><span class="material-symbols-outlined absolute left-space-sm text-[18px] text-outline">search</span><input class="w-full h-9 pl-9 pr-12 rounded-lg bg-surface-container-low border border-outline-variant/40 text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container" placeholder="Search personas, insights..." type="text"/><span class="absolute right-space-sm font-label-sm text-label-sm bg-surface-container-high px-1.5 py-0.5 rounded text-on-surface-variant font-medium border border-outline-variant/50">⌘K</span></div><div class="h-5 w-[1px] bg-outline-variant/40"></div><button class="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-tertiary-fixed-dim ring-2 ring-surface-container-lowest"></span></button><a class="inline-flex items-center gap-space-xs h-9 px-space-md bg-primary-container hover:bg-primary text-on-primary rounded-lg font-label-md text-label-md font-medium shadow-sm transition-colors" data-path="create-persona" href="create-persona.html"><span class="material-symbols-outlined text-[18px]">add</span><span>Create Persona</span></a><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-pQs0EIfedPPV6rHB1qeYdlav5NPjetMfKgHJ53Czj-Vs3e82F7ZAgF2yM8aSvRBdxYW1kD_LpRfWboPhr6CIYdIiK0jZ_qs_JfQMVKxcUQJ8aGzwoFjZIu4cPkMlKdAqJRIEML6U2H1EcCK_X5kvbuBHt4Ad0pWDUpFcjLW2su9Zd1_HBla9TPf1-7uWKQa91YctZKv583RHnsb52gwjqAcKOHboBnif-W0IXo20eEGg-chDjLOI"/><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div></div></header><main class="relative pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Stepper / Horizontal Progress Ribbon -->
+<section class="w-full bg-surface-container-lowest shadow-sm px-gutter-lg py-space-md">
+<div class="max-w-[1400px] mx-auto flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Wizard Phase 03</span>
+<span class="text-on-surface-variant font-label-sm">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">B2B Enterprise Cohort</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight">Step 3 of 7: Define Goals &amp; Core Motivations</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Identify what drives this persona, their desired product outcomes, and psychological motivators.</p>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">cloud_done</span>
+<span class="font-label-sm text-label-sm">Autosaved 2m ago</span>
+</div>
+<div class="h-6 w-[1px] bg-surface-container-high"></div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Completion</span>
+<span class="font-label-md text-label-md font-semibold text-primary">42% Prepared</span>
+</div>
+</div>
+</div>
+<!-- 7-Step Horizontal Node Track -->
+<div class="w-full grid grid-cols-7 gap-space-sm pt-space-xs">
+<!-- Step 1: Basic Information (Completed) -->
+<div class="flex flex-col gap-1.5 cursor-pointer group">
+<div class="h-1.5 w-full rounded-full bg-secondary"></div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">check_circle</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold group-hover:text-primary transition-colors">1. Basic Info</span>
+</div>
+</div>
+<!-- Step 2: Background & Context (Completed) -->
+<div class="flex flex-col gap-1.5 cursor-pointer group">
+<div class="h-1.5 w-full rounded-full bg-secondary"></div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">check_circle</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold group-hover:text-primary transition-colors">2. Context</span>
+</div>
+</div>
+<!-- Step 3: Goals & Motivations (Active) -->
+<div class="flex flex-col gap-1.5">
+<div class="h-1.5 w-full rounded-full bg-primary-container relative">
+<div class="absolute -top-0.5 right-0 w-2.5 h-2.5 rounded-full bg-primary-container shadow-sm"></div>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-4 h-4 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-[10px] font-bold">3</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">3. Goals &amp; Drivers</span>
+</div>
+</div>
+<!-- Step 4: Needs & Pain Points (Upcoming) -->
+<div class="flex flex-col gap-1.5 opacity-60">
+<div class="h-1.5 w-full rounded-full bg-surface-container-high"></div>
+<div class="flex items-center gap-1">
+<span class="w-4 h-4 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-label-sm text-[10px]">4</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">4. Pain Points</span>
+</div>
+</div>
+<!-- Step 5: Behaviors & Preferences (Upcoming) -->
+<div class="flex flex-col gap-1.5 opacity-60">
+<div class="h-1.5 w-full rounded-full bg-surface-container-high"></div>
+<div class="flex items-center gap-1">
+<span class="w-4 h-4 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-label-sm text-[10px]">5</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">5. Behaviors</span>
+</div>
+</div>
+<!-- Step 6: Research Evidence (Upcoming) -->
+<div class="flex flex-col gap-1.5 opacity-60">
+<div class="h-1.5 w-full rounded-full bg-surface-container-high"></div>
+<div class="flex items-center gap-1">
+<span class="w-4 h-4 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-label-sm text-[10px]">6</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">6. Evidence</span>
+</div>
+</div>
+<!-- Step 7: Review & Finalize (Upcoming) -->
+<div class="flex flex-col gap-1.5 opacity-60">
+<div class="h-1.5 w-full rounded-full bg-surface-container-high"></div>
+<div class="flex items-center gap-1">
+<span class="w-4 h-4 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-label-sm text-[10px]">7</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">7. Review</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Wizard Workspace (Two Column Architecture) -->
+<div class="max-w-[1400px] w-full mx-auto px-gutter-lg py-space-lg pb-32">
+<div class="grid grid-cols-12 gap-gutter-lg items-start">
+<!-- LEFT COLUMN: Structured Form Builder (68% -> col-span-8) -->
+<section class="col-span-8 flex flex-col gap-space-lg">
+<!-- Research vs Assumption Protocol Callout -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container"></div>
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">verified</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Data Credibility Framework</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">Strict Mode Enabled</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            To prevent speculative bias, clearly separate direct transcript findings from product team assumptions. Items classified as <strong class="text-on-surface">Hypotheses</strong> will display an amber confidence warning in shared stakeholder reports.
+          </p>
+</div>
+<!-- Section 1: Primary Goals (Repeater Card Section) -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-7 h-7 rounded-lg bg-surface-container-low text-primary flex items-center justify-center font-label-md text-label-md font-bold">1</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Primary User &amp; Business Goals</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Rank objectives that drive Marcus Vance's daily operational focus</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2 Defined / 5 Maximum</span>
+</div>
+<!-- Goal Item #1 (P0 Mission Critical) -->
+<div class="p-space-md bg-surface rounded-xl shadow-sm flex flex-col gap-space-sm transition-all hover:bg-surface-container-low/50">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold tracking-wide">
+                  P0 • MISSION CRITICAL
+                </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">format_quote</span>
+                  Backed by 8 interview quotes
+                </span>
+<span class="text-on-surface-variant font-label-sm">• ID: GL-802</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<button class="p-1 rounded hover:bg-surface-container transition-colors" title="Move Up" type="button"><span class="material-symbols-outlined text-[18px]">arrow_upward</span></button>
+<button class="p-1 rounded hover:bg-surface-container transition-colors" title="Move Down" type="button"><span class="material-symbols-outlined text-[18px]">arrow_downward</span></button>
+<button class="p-1 rounded hover:bg-surface-container transition-colors" title="Delete Goal" type="button"><span class="material-symbols-outlined text-[18px] text-error">delete</span></button>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Goal Description</label>
+<textarea class="w-full bg-surface-container-lowest rounded-lg p-space-sm font-body-md text-body-md text-on-surface focus:outline-none shadow-sm focus:ring-2 focus:ring-primary-container" rows="2">Streamline cross-border treasury settlements in under 10 minutes without manual spreadsheet verification.</textarea>
+</div>
+<!-- Toggle: Evidence vs Assumption -->
+<div class="pt-space-xs flex items-center justify-between bg-surface-container-lowest/80 p-space-sm rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Verification Status</span>
+<div class="flex items-center gap-space-sm">
+<label class="inline-flex items-center gap-1.5 cursor-pointer">
+<input checked="" class="w-4 h-4 text-primary focus:ring-primary accent-primary" name="goal-1-status" type="radio"/>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Verified Transcripts
+                  </span>
+</label>
+<label class="inline-flex items-center gap-1.5 cursor-pointer">
+<input class="w-4 h-4 text-primary focus:ring-primary accent-primary" name="goal-1-status" type="radio"/>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-normal flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span> Hypothesis Only
+                  </span>
+</label>
+</div>
+</div>
+</div>
+<!-- Goal Item #2 (P1 High) -->
+<div class="p-space-md bg-surface rounded-xl shadow-sm flex flex-col gap-space-sm transition-all hover:bg-surface-container-low/50">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold tracking-wide">
+                  P1 • HIGH
+                </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">bar_chart</span>
+                  Backed by Survey Q14
+                </span>
+<span class="text-on-surface-variant font-label-sm">• ID: GL-805</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<button class="p-1 rounded hover:bg-surface-container transition-colors" title="Move Up" type="button"><span class="material-symbols-outlined text-[18px]">arrow_upward</span></button>
+<button class="p-1 rounded hover:bg-surface-container transition-colors" title="Move Down" type="button"><span class="material-symbols-outlined text-[18px]">arrow_downward</span></button>
+<button class="p-1 rounded hover:bg-surface-container transition-colors" title="Delete Goal" type="button"><span class="material-symbols-outlined text-[18px] text-error">delete</span></button>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Goal Description</label>
+<textarea class="w-full bg-surface-container-lowest rounded-lg p-space-sm font-body-md text-body-md text-on-surface focus:outline-none shadow-sm focus:ring-2 focus:ring-primary-container" rows="2">Real-time visibility into liquidity positions across multiple European subsidiaries.</textarea>
+</div>
+<!-- Toggle: Evidence vs Assumption -->
+<div class="pt-space-xs flex items-center justify-between bg-surface-container-lowest/80 p-space-sm rounded-lg">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Verification Status</span>
+<div class="flex items-center gap-space-sm">
+<label class="inline-flex items-center gap-1.5 cursor-pointer">
+<input checked="" class="w-4 h-4 text-primary focus:ring-primary accent-primary" name="goal-2-status" type="radio"/>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Verified Transcripts
+                  </span>
+</label>
+<label class="inline-flex items-center gap-1.5 cursor-pointer">
+<input class="w-4 h-4 text-primary focus:ring-primary accent-primary" name="goal-2-status" type="radio"/>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-normal flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span> Hypothesis Only
+                  </span>
+</label>
+</div>
+</div>
+</div>
+<!-- Add Another Primary Goal Button -->
+<button class="w-full py-space-md rounded-xl bg-surface hover:bg-surface-container-high transition-all flex items-center justify-center gap-space-xs text-primary font-label-md text-label-md font-semibold shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Add Another Primary Goal</span>
+</button>
+</div>
+<!-- Section 2: Underlying Motivations & Drivers -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-7 h-7 rounded-lg bg-surface-container-low text-primary flex items-center justify-center font-label-md text-label-md font-bold">2</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Psychological Drivers &amp; Behavioral Archetypes</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Select motivational levers documented in observational sessions</span>
+</div>
+</div>
+<!-- Motivational Tag Matrix -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Active Behavioral Tags</label>
+<div class="flex flex-wrap gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-medium shadow-sm">
+<span class="material-symbols-outlined text-[16px]">speed</span>
+                Operational Efficiency
+                <button class="hover:opacity-75" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-medium shadow-sm">
+<span class="material-symbols-outlined text-[16px]">shield</span>
+                Risk Aversion
+                <button class="hover:opacity-75" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md font-medium hover:bg-surface-container-highest cursor-pointer">
+<span>Trending: Career Advancement</span>
+<span class="material-symbols-outlined text-[14px] text-primary">add</span>
+</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md font-medium hover:bg-surface-container-highest cursor-pointer">
+<span>Team Autonomy</span>
+<span class="material-symbols-outlined text-[14px] text-primary">add</span>
+</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md font-medium hover:bg-surface-container-highest cursor-pointer">
+<span>Regulatory Compliance</span>
+<span class="material-symbols-outlined text-[14px] text-primary">add</span>
+</span>
+</div>
+</div>
+<!-- Rating Scale / Dial: Intrinsic vs Extrinsic Motivation -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col gap-space-sm">
+<div class="flex justify-between items-center">
+<div>
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Primary Motivation Spectrum</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Balance between internal mastery vs external stakeholder mandates</span>
+</div>
+<span class="px-2.5 py-1 rounded bg-surface-container-lowest font-label-sm text-label-sm font-bold text-primary shadow-sm">65% Extrinsically Driven</span>
+</div>
+<!-- Custom Visual Track / Range -->
+<div class="flex flex-col gap-1">
+<input class="w-full h-2 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-primary" max="100" min="0" type="range" value="65"/>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Intrinsic (Craft, Autonomy, Mastery)</span>
+<span>Balanced</span>
+<span>Extrinsic (Audits, SLAs, Metrics)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 3: Success Criteria & KPIs -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-7 h-7 rounded-lg bg-surface-container-low text-primary flex items-center justify-center font-label-md text-label-md font-bold">3</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Key Performance Indicators &amp; Daily Success Criteria</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Quantifiable results by which Marcus evaluates software viability</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">User Workflow Success Definition</label>
+<div class="relative">
+<input class="w-full h-11 bg-surface-container-low rounded-lg px-space-md font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary-container pr-24" type="text" value="Zero reconciliation errors during month-end audit and 50% time saved on daily reporting."/>
+<span class="absolute right-3 top-3 text-secondary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+                Valid metric
+              </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Derived from sprint user test session with Marcus &amp; 3 treasury team associates.</span>
+</div>
+<div class="grid grid-cols-2 gap-space-md pt-space-xs">
+<div class="p-space-sm bg-surface rounded-lg shadow-sm flex items-center gap-space-sm">
+<div class="p-2 rounded bg-primary-container/10 text-primary">
+<span class="material-symbols-outlined text-[20px]">timer</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Target Efficiency Metric</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">&lt; 10 Mins / Settlement</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface rounded-lg shadow-sm flex items-center gap-space-sm">
+<div class="p-2 rounded bg-secondary-container/30 text-secondary">
+<span class="material-symbols-outlined text-[20px]">fact_check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Compliance Accuracy Threshold</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">99.98% Without Flag</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- RIGHT COLUMN: Sticky Live Persona Card Preview (32% -> col-span-4) -->
+<aside class="col-span-4 sticky top-20 flex flex-col gap-space-md">
+<!-- Live Card Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md overflow-hidden flex flex-col">
+<!-- Card Header Decorative Banner -->
+<div class="bg-surface-container-high px-space-md py-space-sm flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold">Live Card Synthesis</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Autorefreshed</span>
+</div>
+<!-- Persona Demographic Identification -->
+<div class="p-space-lg flex flex-col gap-space-md">
+<div class="flex items-start gap-space-md">
+<img class="w-16 h-16 rounded-xl object-cover shadow-sm flex-shrink-0" data-alt="Professional studio portrait of Marcus Vance, a 38-year-old financial executive with neatly styled dark hair, wearing a navy blazer and light shirt, confident analytical expression with soft office bokeh background, clean corporate SaaS design lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHb2Nd1i86iYqgaJq16eByv-xEqcSjPrWvwAcghTfg3xG0MsBr3HE42lTQpV-42ZjzXYa4At2ITt0tBDWDNASfgzVWgjAYKLzbZXsAT7dJANkndc3M_bBfBKpeaqwL4hZYMhRWG6HMu7s01j2AjIF2KqdQMANVKCrLq-Onv8WvaxqJ7P6H7Q0Pm_p0-uleYfoMw764WxtKPtSRi_yDYQmoJtGk3OFXOBV2sbMtMLgKPZMEc37vXC9Q"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Enterprise Persona</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate leading-tight">Marcus Vance</h3>
+<span class="font-body-md text-body-md text-on-surface-variant truncate">Head of Treasury Operations</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">38 yrs • London &amp; Zurich</span>
+</div>
+</div>
+<!-- Associated Project Pill -->
+<div class="px-space-sm py-1.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-1.5 overflow-hidden">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">folder</span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium truncate">Global Merchant Portal</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">v2.4 Active</span>
+</div>
+<!-- Research Confidence Meter Widget -->
+<div class="p-space-sm bg-surface rounded-xl shadow-sm flex flex-col gap-space-xs">
+<div class="flex justify-between items-center">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Evidence Confidence Rating</span>
+<span class="font-label-sm text-label-sm font-bold text-secondary">78% (Robust)</span>
+</div>
+<!-- Meter Bar -->
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden flex">
+<div class="bg-secondary h-full rounded-full" style="width: 78%;"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant pt-1">
+<span class="font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span> 14 Linked Citations
+                </span>
+<span class="font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary-fixed-dim">help_outline</span> 2 Hypotheses
+                </span>
+</div>
+</div>
+<!-- Dynamically Rendered Goals Preview -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Active Goals Stream</span>
+<span class="material-symbols-outlined text-[16px] text-primary">visibility</span>
+</div>
+<div class="space-y-space-xs">
+<!-- Goal Bullet 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px] flex-shrink-0 mt-0.5">adjust</span>
+<div class="flex flex-col min-w-0">
+<p class="font-body-sm text-body-sm text-on-surface font-medium leading-snug line-clamp-2">
+                      Cross-border settlements &lt; 10 mins without manual spreadsheet verification.
+                    </p>
+<span class="font-label-sm text-[10px] text-secondary font-bold uppercase tracking-wider mt-1">Verified • 8 Transcripts</span>
+</div>
+</div>
+<!-- Goal Bullet 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px] flex-shrink-0 mt-0.5">adjust</span>
+<div class="flex flex-col min-w-0">
+<p class="font-body-sm text-body-sm text-on-surface font-medium leading-snug line-clamp-2">
+                      Real-time liquidity visibility across European subsidiaries.
+                    </p>
+<span class="font-label-sm text-[10px] text-secondary font-bold uppercase tracking-wider mt-1">Verified • Survey Q14</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Success Metric Callout Box -->
+<div class="p-space-sm rounded-lg bg-surface-container-highest/60 flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">flag</span> Primary KPI
+              </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">
+                "Zero reconciliation errors during month-end audit and 50% time saved on daily reporting."
+              </p>
+</div>
+<!-- Mini Sparkline Card -->
+<div class="p-space-sm rounded-lg bg-surface flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Persona Cohesion</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">92.4</span>
+</div>
+<!-- Inline Sparkline Chart SVG -->
+<svg class="w-24 h-8 text-primary" fill="none" viewbox="0 0 100 30">
+<path d="M0 25 C20 22, 35 28, 50 15 C65 5, 80 18, 100 2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<path d="M0 25 C20 22, 35 28, 50 15 C65 5, 80 18, 100 2 L 100 30 L 0 30 Z" fill="currentColor" fill-opacity="0.1"></path>
+</svg>
+</div>
+</div>
+</div>
+<!-- Research Quick Notes Flyout Aid -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-primary flex-shrink-0">lightbulb</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Interviewer Advice</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Notice how Marcus repeatedly links treasury speed directly to audit risk reduction. Treat risk prevention as an intrinsic emotional catalyst.
+            </p>
+</div>
+</div>
+</aside>
+</div>
+</div>
+<!-- Bottom Sticky Actions Bar -->
+<div class="fixed bottom-0 left-[260px] right-0 h-20 bg-surface-container-lowest shadow-xl px-gutter-lg flex items-center justify-between z-40">
+<div class="flex items-center gap-space-md">
+<button class="h-10 px-space-md rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-medium transition-colors flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Save Draft</span>
+</button>
+<button class="font-label-md text-label-md text-on-surface-variant hover:text-error transition-colors" type="button">
+        Cancel &amp; Exit Wizard
+      </button>
+</div>
+<div class="flex items-center gap-space-md">
+<button class="h-10 px-space-md rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-medium transition-colors flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Back to Background</span>
+</button>
+<button class="h-10 px-space-lg rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md font-medium transition-colors flex items-center gap-2 shadow-sm" type="button">
+<span>Continue to Needs &amp; Pain Points</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div></main></div>
+<script>
+(function(){
+  const root=document.documentElement;
+  try {
+    const theme=JSON.parse(localStorage.getItem('personaStudioTheme')||'null');
+    if(theme){
+      if(theme.primary) root.style.setProperty('--primary',theme.primary);
+      if(theme.secondary) root.style.setProperty('--secondary',theme.secondary);
+      if(theme.accent) root.style.setProperty('--accent',theme.accent);
+    }
+  } catch(e){}
+  document.querySelectorAll('a[data-path]').forEach(a=>{
+    const p=(a.getAttribute('data-path')||'').trim();
+    const routes={'dashboard':'index.html','projects':'projects.html','create-persona':'create-persona.html','persona-library':'persona-library.html','research-and-surveys':'research-insights.html','insights-and-analytics':'research-insights.html','compare-personas':'compare-personas.html','reports-and-exports':'reports.html','settings':'settings.html'};
+    if(routes[p]) a.href=routes[p];
+  });
+  document.querySelectorAll('form').forEach(form=>{
+    form.addEventListener('submit',function(e){
+      if(form.dataset.allowNative==='true') return;
+      e.preventDefault();
+      let note=form.querySelector('[data-integration-feedback]');
+      if(!note){note=document.createElement('p');note.dataset.integrationFeedback='true';note.className='mt-3 text-sm';form.appendChild(note)}
+      note.textContent='This screen is connected as a UI prototype. Persistent account, email, and server actions require backend configuration.';
+      note.setAttribute('role','status');
+    });
+  });
+})();
+</script>
+</body></html>

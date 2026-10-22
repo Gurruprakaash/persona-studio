@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed":"#0f0069","surface-bright":"#f8f9ff","on-tertiary-fixed":"#2a1700","on-primary":"#ffffff","surface-container":"#e6eeff","primary-container":"#4f46e5","secondary":"#006a63","surface-dim":"#ccdbf3","background":"#f8f9ff","primary-fixed":"#e2dfff","inverse-primary":"#c3c0ff","on-surface-variant":"#464555","error":"#ba1a1a","on-primary-container":"#dad7ff","primary":"#3525cd","on-surface":"#0d1c2e","surface-tint":"#4d44e3","on-secondary-fixed-variant":"#00504a","on-tertiary-fixed-variant":"#653e00","primary-fixed-dim":"#c3c0ff","surface-container-highest":"#d5e3fc","surface-container-high":"#dce9ff","tertiary-container":"#885500","inverse-surface":"#233144","secondary-fixed":"#9cf2e8","inverse-on-surface":"#eaf1ff","on-background":"#0d1c2e","outline":"#777587","tertiary-fixed-dim":"#ffb95f","on-tertiary":"#ffffff","on-secondary-fixed":"#00201d","on-secondary-container":"#006f67","on-primary-fixed-variant":"#3323cc","outline-variant":"#c7c4d8","on-error-container":"#93000a","secondary-container":"#99efe5","error-container":"#ffdad6","on-error":"#ffffff","on-secondary":"#ffffff","surface-container-lowest":"#ffffff","surface":"#f8f9ff","surface-container-low":"#eff4ff","secondary-fixed-dim":"#80d5cb","tertiary-fixed":"#ffddb8","on-tertiary-container":"#ffd4a4","surface-variant":"#d5e3fc","tertiary":"#684000"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","gutter-lg":"2rem","margin-mobile":"1rem","gutter-sm":"1rem","gutter":"1.5rem","space-xs":"0.25rem","margin":"2rem","space-sm":"0.5rem","space-xl":"2rem","space-md":"1rem"},"fontFamily":{"headline-lg":["Inter"],"headline-sm":["Inter"],"headline-xl":["Inter"],"headline-md":["Inter"],"body-lg":["Inter"],"label-md":["Inter"],"body-md":["Inter"],"headline-xl-mobile":["Inter"],"label-sm":["Inter"],"body-sm":["Inter"]},"fontSize":{"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0","fontWeight":"400"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-[260px] bg-surface-container-lowest border-r border-outline-variant/40 z-50 flex flex-col justify-between select-none"><div class="flex flex-col flex-1 min-h-0"><div class="px-space-md py-space-md border-b border-outline-variant/30 flex items-center gap-space-sm"><img alt="Persona Studio Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VeT56ZrX5FIKjU7W3pvQom45vdo_jp7DQyvM7vTpFHOM3G1t6Zz_2x_puUzNF0RM1_NxYFq0sBrRbDN4rtuue2ArYmtLoulxhbwHHTNleCDYdOvu9Gw2FNz6krsHanOpfc_qlVG06_f3xIs2twC6g7UsVnrCKHRJl6VX1PV-LqQ8tbZHSQf85mPnarL9I3uk3CRSs-Y6KD-31Uk4_QSsSGSh3sgSx94GI-qAdbJow6-sFsnTitxnboLQ"/><div class="flex flex-col overflow-hidden"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate leading-tight">Persona Studio</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate font-normal">Research &amp; Persona Intelligence</span></div></div><nav class="flex-1 px-space-sm py-space-md overflow-y-auto space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-medium rounded-lg"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="index.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Dashboard</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="projects" href="projects.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">folder_open</span><span class="font-body-md text-body-md">Projects</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="create-persona" href="create-persona.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">person_add</span><span class="font-body-md text-body-md">Create Persona</span></div><span class="material-symbols-outlined text-primary text-[18px]">add</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="persona-library" href="persona-library.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-body-md text-body-md">Persona Library</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="research-and-surveys" href="research-insights.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">quiz</span><span class="font-body-md text-body-md">Research &amp; Surveys</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="insights-and-analytics" href="research-insights.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">insights</span><span class="font-body-md text-body-md">Insights &amp; Analytics</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="compare-personas" href="compare-personas.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">compare_arrows</span><span class="font-body-md text-body-md">Compare Personas</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="reports-and-exports" href="reports.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">description</span><span class="font-body-md text-body-md">Reports &amp; Exports</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="settings.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-body-md text-body-md">Settings</span></div></a></nav></div><div class="p-space-sm border-t border-outline-variant/30 space-y-space-sm bg-surface-container-lowest"><div class="px-space-sm py-space-xs rounded-lg bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-xs overflow-hidden"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">workspaces</span><span class="font-label-md text-label-md text-on-surface font-medium truncate">FinTech UX Workspace</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">unfold_more</span></div><div class="flex items-center justify-between px-space-sm py-space-xs"><div class="flex items-center gap-space-sm overflow-hidden"><img alt="Profile" class="w-8 h-8 rounded-full object-cover flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-pQs0EIfedPPV6rHB1qeYdlav5NPjetMfKgHJ53Czj-Vs3e82F7ZAgF2yM8aSvRBdxYW1kD_LpRfWboPhr6CIYdIiK0jZ_qs_JfQMVKxcUQJ8aGzwoFjZIu4cPkMlKdAqJRIEML6U2H1EcCK_X5kvbuBHt4Ad0pWDUpFcjLW2su9Zd1_HBla9TPf1-7uWKQa91YctZKv583RHnsb52gwjqAcKOHboBnif-W0IXo20eEGg-chDjLOI"/><div class="flex flex-col overflow-hidden"><span class="font-label-md text-label-md text-on-surface font-semibold truncate leading-tight">Elena Rostova</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate font-normal">Lead UX Researcher</span></div></div><button class="p-1 text-on-surface-variant hover:text-on-surface rounded hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">more_vert</span></button></div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md border-b border-outline-variant/30 z-40 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-xs text-on-surface-variant font-body-md text-body-md"><span class="hover:text-on-surface transition-colors cursor-pointer">Workspace</span><span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span><span class="text-on-surface font-medium">Dashboard</span></div><div class="flex items-center gap-space-md"><div class="relative flex items-center w-64"><span class="material-symbols-outlined absolute left-space-sm text-[18px] text-outline">search</span><input class="w-full h-9 pl-9 pr-12 rounded-lg bg-surface-container-low border border-outline-variant/40 text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container" placeholder="Search personas, insights..." type="text"/><span class="absolute right-space-sm font-label-sm text-label-sm bg-surface-container-high px-1.5 py-0.5 rounded text-on-surface-variant font-medium border border-outline-variant/50">⌘K</span></div><div class="h-5 w-[1px] bg-outline-variant/40"></div><button class="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-tertiary-fixed-dim ring-2 ring-surface-container-lowest"></span></button><a class="inline-flex items-center gap-space-xs h-9 px-space-md bg-primary-container hover:bg-primary text-on-primary rounded-lg font-label-md text-label-md font-medium shadow-sm transition-colors" data-path="create-persona" href="create-persona.html"><span class="material-symbols-outlined text-[18px]">add</span><span>Create Persona</span></a><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-pQs0EIfedPPV6rHB1qeYdlav5NPjetMfKgHJ53Czj-Vs3e82F7ZAgF2yM8aSvRBdxYW1kD_LpRfWboPhr6CIYdIiK0jZ_qs_JfQMVKxcUQJ8aGzwoFjZIu4cPkMlKdAqJRIEML6U2H1EcCK_X5kvbuBHt4Ad0pWDUpFcjLW2su9Zd1_HBla9TPf1-7uWKQa91YctZKv583RHnsb52gwjqAcKOHboBnif-W0IXo20eEGg-chDjLOI"/><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div></div></header><main class="relative pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="px-margin py-gutter-lg space-y-gutter-lg max-w-[1440px] mx-auto w-full">
+<!-- Top Analytical Header & Context Bar -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider">
+            Empirical Corpus
+          </span>
+<span class="text-outline text-label-sm">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Sprint 24 Synthesis Board</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Research &amp; Insights</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          142 empirical sources synthesizing behavioral trends across 4 product cohorts
+        </p>
+</div>
+<!-- Action Group -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Cohort Select Dropdown -->
+<div class="relative">
+<button class="h-10 px-space-md bg-surface-container-lowest hover:bg-surface-container-low text-on-surface rounded-lg font-label-md text-label-md flex items-center gap-space-xs shadow-sm transition-colors" id="cohortBtn" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">filter_list</span>
+<span id="currentCohort">FinTech Retail (All)</span>
+<span class="material-symbols-outlined text-[16px] text-outline">expand_more</span>
+</button>
+</div>
+<!-- Secondary Action -->
+<button class="h-10 px-space-md bg-surface-container-lowest hover:bg-surface-container-low text-on-surface rounded-lg font-label-md text-label-md flex items-center gap-space-xs shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">upload_file</span>
+<span>+ Add Research Source</span>
+</button>
+<!-- Primary Action -->
+<button class="h-10 px-space-md bg-primary-container hover:bg-primary text-on-primary rounded-lg font-label-md text-label-md font-medium shadow-sm flex items-center gap-space-xs transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+<span>Synthesize New Insight</span>
+</button>
+</div>
+</div>
+<!-- Top Analytical Overview Metric Cards (3 Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1: Empirical Evidence Health -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute -right-4 -bottom-4 w-28 h-28 bg-secondary-container/30 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Evidence Health</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> 92% Verified
+            </span>
+</div>
+<div class="mt-space-md flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">142</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">artifacts logged</span>
+</div>
+<!-- Progress bar representation -->
+<div class="mt-space-md space-y-1.5">
+<div class="w-full h-2 rounded-full bg-surface-container-low overflow-hidden flex">
+<div class="bg-secondary h-full rounded-l-full" style="width: 34%"></div>
+<div class="bg-primary-container h-full" style="width: 58%"></div>
+<div class="bg-tertiary-fixed-dim h-full rounded-r-full" style="width: 8%"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant pt-1">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary"></span>48 Interviews</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-primary-container"></span>94 Surveys</span>
+<span class="flex items-center gap-1 text-tertiary"><span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>11 Unmapped</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low/60 rounded-lg p-2.5 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Coverage saturation:</span>
+<span class="font-label-md text-label-md font-semibold text-secondary">High Statistical Power</span>
+</div>
+</div>
+<!-- Card 2: Recurring Core Frustrations -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 bg-error-container/20 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Recurring Core Frustrations</span>
+<span class="material-symbols-outlined text-error text-[18px]">crisis_alert</span>
+</div>
+<!-- Metric Item 1 -->
+<div class="mt-space-md space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-medium text-on-surface">Jargon &amp; Opaque Pricing</span>
+<span class="font-label-sm text-label-sm font-semibold text-error">72% of interviews</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-low overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 72%"></div>
+</div>
+</div>
+<!-- Metric Item 2 -->
+<div class="mt-space-md space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-medium text-on-surface">SLA &amp; Downtime Anxiety</span>
+<span class="font-label-sm text-label-sm font-semibold text-tertiary">54% frequency</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-low overflow-hidden">
+<div class="bg-tertiary-fixed-dim h-full rounded-full" style="width: 54%"></div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low/60 rounded-lg p-2.5 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Primary driver:</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Trust deficit at conversion</span>
+</div>
+</div>
+<!-- Card 3: Hypothesis vs Verified Ratio -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute -right-4 -bottom-4 w-28 h-28 bg-primary-fixed/40 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Hypothesis vs Verified</span>
+<span class="material-symbols-outlined text-primary-container text-[18px]">verified</span>
+</div>
+<div class="mt-space-md flex items-center gap-space-lg">
+<!-- Inline Mini Donut SVG Chart -->
+<div class="relative w-16 h-16 flex-shrink-0">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.8"></path>
+<path class="text-primary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="88, 100" stroke-width="3.8"></path>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center font-label-md text-label-md font-bold text-on-surface">
+                88%
+              </div>
+</div>
+<div class="space-y-1">
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">88%</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Empirical</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+                12% assumptions remaining. 4 questions queued for validation in Sprint 25.
+              </p>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low/60 rounded-lg p-2.5 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Confidence status:</span>
+<span class="font-label-md text-label-md font-semibold text-primary">High Fidelity Base</span>
+</div>
+</div>
+</div>
+<!-- Two-Column Master Workspace Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-start">
+<!-- Left Column: Research Source Repository & Notes (7 cols) -->
+<div class="lg:col-span-7 space-y-space-md">
+<!-- Tab Navigation & Filter Sub-bar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 sm:pb-0" id="tabBar">
+<button class="px-space-sm py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-medium whitespace-nowrap shadow-sm transition-colors">
+                All Fieldwork (142)
+              </button>
+<button class="px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md whitespace-nowrap transition-colors">
+                User Interviews (48)
+              </button>
+<button class="px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md whitespace-nowrap transition-colors">
+                Surveys (94)
+              </button>
+<button class="px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md whitespace-nowrap transition-colors">
+                Usability Labs (12)
+              </button>
+</div>
+<span class="font-label-sm text-label-sm text-outline hidden sm:inline-block">Sorted: Most Recent</span>
+</div>
+<!-- Transcript Search Bar -->
+<div class="relative flex items-center w-full">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span>
+<input class="w-full h-10 pl-10 pr-24 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" placeholder="Search verbatim quotes, speaker name, keyword, or timestamp..." type="text"/>
+<div class="absolute right-2.5 flex items-center gap-1.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Quote Mode</span>
+</div>
+</div>
+</div>
+<!-- Note Card 1: Sarah Chen -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow space-y-space-md relative group">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<img alt="Sarah Chen avatar" class="w-10 h-10 rounded-full object-cover flex-shrink-0" data-alt="Close up professional portrait of Sarah Chen, 31 year old Asian woman, product specialist, wearing a navy sweater, warm natural lighting against soft studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB972xpxeUFS9acWlIIJA2LVsW3l6CZ_MZGUwOtSW_PRiSrHItiCEljY-uHA4f-ZPVQLNrEhC4YN5e_-PusIhm38Je1h5z0oiWyxP8HhdlwI558Xko_wIQU0jfCtE6JEH6Lj_maOWGgYMfAZtUDHUhvGIKHuXslRe85_h1FQ888venECqfSa81KQMYUjS9cib2GF6lQu07NfJnvwaMXVZvdCRftwqrpny1SmYdA1DX-16rAbgZ1v7Kj"/>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Interview #04 — Sarah Chen</h3>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Verified
+                  </span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span class="text-primary font-medium">Retail Banking Cohort</span>
+<span>•</span>
+<span>Audio: 42 min</span>
+<span>•</span>
+<span class="bg-surface-container-low px-1.5 py-0.5 rounded text-on-surface-variant font-mono">Timestamp @ 18:22</span>
+</div>
+</div>
+</div>
+<!-- Audio Micro Player Control -->
+<button class="w-8 h-8 rounded-full bg-surface-container-low hover:bg-primary-container hover:text-on-primary text-primary transition-colors flex items-center justify-center flex-shrink-0 shadow-sm" title="Listen to clip">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+</button>
+</div>
+<!-- Highlighted Verbatim Quote Block -->
+<div class="bg-surface-container-low/70 rounded-xl p-space-md space-y-space-xs">
+<div class="flex items-center gap-1 text-primary-container">
+<span class="material-symbols-outlined text-[16px]">format_quote</span>
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider">Verbatim Evidence</span>
+</div>
+<blockquote class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+              “Every time I opened Robinhood, I felt like I was standing in a casino... I need transparency. If I cannot calculate my monthly custody fee in five seconds, I log out and transfer back to my credit union.”
+            </blockquote>
+</div>
+<!-- Semantic Tag Strip & Persona Connection -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">person</span>
+                Persona: Sarah Chen
+              </span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">flag</span>
+                Goal: Emergency Buffer
+              </span>
+<span class="px-2.5 py-1 rounded-lg bg-error-container/40 text-on-error-container font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">psychology_alt</span>
+                Cognitive Anxiety
+              </span>
+</div>
+<button class="font-label-sm text-label-sm text-primary hover:text-on-primary-fixed-variant font-medium flex items-center gap-1 transition-colors">
+<span>View Full Transcript</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Note Card 2: Marcus Vance -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow space-y-space-md relative group">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<img alt="Marcus Vance avatar" class="w-10 h-10 rounded-full object-cover flex-shrink-0" data-alt="Portrait of Marcus Vance, 38 year old African American male DevOps engineering lead wearing glasses and dark charcoal hoodie, professional office background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsAcX83ws38GJNi1XN_Wc2F7RfwuUp1I3samxA77-bDqsLu0F4xO6A8S_PygGfj3zANIbEKP3q3PYts8xSZhXJmkCXBxJhPnv11eEFS4hQty6J818MCdxukB1jjvv5FSbpT_1LQCaJ5pydWnGVyjW-kAxT0Ef4ucdgKvWZPR8JWcKQEDosBfKIc__lpqOs2l8N3_H-1dDrOWlXpUc0i4KUoO3l_nMJELlgqmIhTiG3eiEhrT8s7cy0"/>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Interview #11 — Marcus Vance</h3>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Verified
+                  </span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span class="text-primary font-medium">Enterprise DevOps</span>
+<span>•</span>
+<span>Audio: 55 min</span>
+<span>•</span>
+<span class="bg-surface-container-low px-1.5 py-0.5 rounded text-on-surface-variant font-mono">Timestamp @ 34:10</span>
+</div>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-low hover:bg-primary-container hover:text-on-primary text-primary transition-colors flex items-center justify-center flex-shrink-0 shadow-sm" title="Listen to clip">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+</button>
+</div>
+<!-- Highlighted Quote Block -->
+<div class="bg-surface-container-low/70 rounded-xl p-space-md space-y-space-xs">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[16px]">terminal</span>
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider">Verbatim Evidence</span>
+</div>
+<blockquote class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+              “Zero reconciliation errors during month-end audit. Give me raw log export APIs and webhook endpoints. I don't want a 12-step guided onboarding tour with confetti animations.”
+            </blockquote>
+</div>
+<!-- Semantic Tag Strip -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">person</span>
+                Persona: Marcus Vance
+              </span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">code</span>
+                Architecture &amp; CLI First
+              </span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+                SLA Compliance: 99.99%
+              </span>
+</div>
+<button class="font-label-sm text-label-sm text-primary hover:text-on-primary-fixed-variant font-medium flex items-center gap-1 transition-colors">
+<span>View Full Transcript</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Note Card 3: Survey #104 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow space-y-space-md relative">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed font-bold text-headline-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">poll</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Survey #104 — SME Merchants</h3>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">pending</span> Action Needed
+                  </span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span>Global Merchant Portal</span>
+<span>•</span>
+<span class="font-semibold text-on-surface">62 respondents</span>
+<span>•</span>
+<span>Sample Margin: ±4.2%</span>
+</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-low px-2 py-1 rounded text-on-surface-variant">N=62</span>
+</div>
+<!-- Amber Survey Warning / Research Note Callout -->
+<div class="bg-tertiary-fixed/30 rounded-xl p-space-md space-y-space-xs">
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[16px]">contact_support</span>
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider">Methodology Note</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-medium">
+              Needs 2 follow-up qualitative deep dives to confirm tax pain point. Quantitative signal indicates 81% dropoff in cross-border settlements, but free-form explanations conflict on VAT compliance versus banking gateway fees.
+            </p>
+</div>
+<!-- Bottom Metric & Schedule Button -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm">
+                Cohort: Micro-Retail
+              </span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm">
+                Funnel: Settlement Step 3
+              </span>
+</div>
+<button class="h-8 px-3 rounded-lg bg-surface-container-low hover:bg-surface-container text-tertiary font-label-md text-label-md font-semibold flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">calendar_add_on</span>
+<span>Schedule 2 Deep Dives</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right Column: Cross-Persona Insight Clusters & Behavioral Matrices (5 cols) -->
+<div class="lg:col-span-5 space-y-gutter">
+<!-- Section Header -->
+<div class="flex items-center justify-between">
+<div class="space-y-0.5">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Cross-Persona Behavioral Insights</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Synthesized heuristic patterns ready for roadmap injection</p>
+</div>
+<button class="text-primary hover:text-on-primary-fixed-variant text-label-sm font-semibold flex items-center gap-0.5">
+<span>Matrix View</span>
+<span class="material-symbols-outlined text-[16px]">grid_on</span>
+</button>
+</div>
+<!-- Insight Card 1: The Transparency Threshold -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow space-y-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Insight Cluster #01</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">The Transparency Threshold</h3>
+</div>
+<div class="flex items-center -space-x-2 overflow-hidden">
+<img alt="Sarah Chen" class="inline-block h-7 w-7 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Portrait of Sarah Chen, professional Asian woman in early thirties" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV-_ROqVnkAhU9baDKo6Fx41pTE-NWtpqxLj5W-rF23RhiqgDQChcaBHMJAXtws0ymUel4ZmPFxYGRkb8y4j6s30hRb5qP0uEHs5O7u23GQ8WbNS8Z9GmyYcSFQTRB2v37KIKSPHX2F9RzgchJgkxc5WsiksjH-o7fE7wiu3x53iNALFapQxxqqw3lk9ZyibLSNj3BKfIF2-sIQhDT_StXZGmNhoIQSKbevIa2zFxGy2WZJrR45XQ6"/>
+<img alt="Elena Gomez" class="inline-block h-7 w-7 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Portrait of Elena Gomez, Hispanic female in late twenties, smiling in studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6N4aPPTyQqTAuSZJwFJ_I779D9S7QmPThO2cc5NAn7zhZ6VZ1B9GvwCIDNAweLm_YI1KWK4FOWuXyDksNoUmk3a7GGP39IxCTxzWDWfLMUWX33H7dH7ILGdmi5ptoSXV1ndtC9do49rplDhK0CaATAlw46i_vPb2qEY5cOlVQJaKuVlVBqrNgZs9mLeA9XAc-lFz9ux1x1Wj0p17DawyunaqPYsSsB31nTSLPMqoSX1MJFQmpxXcc"/>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Across <strong class="text-on-surface font-medium">Sarah Chen</strong> &amp; <strong class="text-on-surface font-medium">Elena Gomez</strong>, cognitive load spikes dramatically when pricing tiers require mental arithmetic or variable gas fee extrapolation.
+          </p>
+<!-- Recommended Design Directive Container -->
+<div class="bg-surface-container-low rounded-xl p-space-md space-y-1">
+<div class="flex items-center gap-1.5 text-primary-container">
+<span class="material-symbols-outlined text-[18px]">design_services</span>
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider">Product Directive</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-medium">
+              “Single upfront dollar cost breakdown” — calculate net total before user commits to authorization screen.
+            </p>
+</div>
+<!-- Corroboration & Action -->
+<div class="pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">psychology</span>
+<span>Supported by 19 field quotes</span>
+</div>
+<button class="h-8 px-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-medium flex items-center gap-1 transition-colors">
+<span>Link Finding to Persona Attribute</span>
+<span class="material-symbols-outlined text-[16px] text-primary">tv_displays</span>
+</button>
+</div>
+</div>
+<!-- Insight Card 2: Terminal vs Wizard Preference -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow space-y-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Insight Cluster #02</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Terminal vs Wizard Preference</h3>
+</div>
+<div class="flex items-center -space-x-2 overflow-hidden">
+<img alt="Marcus Vance" class="inline-block h-7 w-7 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Portrait of Marcus Vance, African American male DevOps lead" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJn2J0W4LIGSmTkrmgZbg1WFGhyCVyDAA0EsU5iUuLwBLrwdyEdoxLzzzRIUI9he4nqQuVJOdCZ2nz6Vmqyt5nrdnkm1J-5wfB8P7KYtsOfGjxucuv6i9bnml-Iq_hLWiXhX-7PARrrrl5elRmXz-W9s9N7ZboM1P9FR6Z2o_wV2i7Q6RqUPnmEMdotAyVo1mJFTCey3HdXv5ZIOLwTuKnH7pDzlkfBcrl6xHK-b4javwdJwMQpCQ4"/>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            High tech-literacy personas (<strong class="text-on-surface font-medium">Marcus Vance</strong>) abandon multi-step guided wizards in favor of dense tabular controls, keyboard macros, and batch JSON configuration payloads.
+          </p>
+<!-- Recommended Design Directive -->
+<div class="bg-surface-container-low rounded-xl p-space-md space-y-1">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[18px]">build</span>
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider">Product Directive</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-medium">
+              Provide dual-mode setup: Fast-path YAML/CLI ingestion toggle alongside legacy step-by-step UX for enterprise tier.
+            </p>
+</div>
+<!-- Corroboration & Action -->
+<div class="pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-primary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">speed</span>
+<span>Reduces bounce by 41%</span>
+</div>
+<button class="h-8 px-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-medium flex items-center gap-1 transition-colors">
+<span>Link Finding to Persona Attribute</span>
+<span class="material-symbols-outlined text-[16px] text-primary">tv_displays</span>
+</button>
+</div>
+</div>
+<!-- Synthesis Matrix Visualizer Module -->
+<div class="bg-surface-container-low/70 rounded-xl p-space-lg space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Persona Affinity Correlation</span>
+<span class="font-label-sm text-label-sm text-outline font-mono">r = 0.84</span>
+</div>
+<!-- Visual Correlation Strip -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface">
+<span>Retail (Sarah) ↔ Gen-Z (Alex)</span>
+<span class="font-mono text-secondary font-semibold">89% Shared Pain</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 89%"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface pt-1">
+<span>DevOps (Marcus) ↔ Cloud Architect (David)</span>
+<span class="font-mono text-primary font-semibold">94% Shared Pain</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 94%"></div>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Synthesized automatically by semantic vector matching</span>
+<button class="text-primary hover:underline font-semibold font-label-sm text-label-sm">Inspect Model</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple cohort selector toggle logic
+  (function() {
+    const cohortBtn = document.getElementById('cohortBtn');
+    const currentCohort = document.getElementById('currentCohort');
+    const cohorts = [
+      'FinTech Retail (All)',
+      'B2B Cloud Infrastructure',
+      'Gen-Z Wealth Starters',
+      'Global SME Merchants'
+    ];
+    let currentIndex = 0;
+
+    if (cohortBtn && currentCohort) {
+      cohortBtn.addEventListener('click', function() {
+        currentIndex = (currentIndex + 1) % cohorts.length;
+        currentCohort.textContent = cohorts[currentIndex];
+      });
+    }
+
+    // Tabs toggle appearance
+    const tabs = document.querySelectorAll('#tabBar button');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', function() {
+        tabs.forEach(t => {
+          t.className = 'px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md whitespace-nowrap transition-colors';
+        });
+        this.className = 'px-space-sm py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-medium whitespace-nowrap shadow-sm transition-colors';
+      });
+    });
+  })();
+</script></main></div>
+<script>
+(function(){
+  const root=document.documentElement;
+  try {
+    const theme=JSON.parse(localStorage.getItem('personaStudioTheme')||'null');
+    if(theme){
+      if(theme.primary) root.style.setProperty('--primary',theme.primary);
+      if(theme.secondary) root.style.setProperty('--secondary',theme.secondary);
+      if(theme.accent) root.style.setProperty('--accent',theme.accent);
+    }
+  } catch(e){}
+  document.querySelectorAll('a[data-path]').forEach(a=>{
+    const p=(a.getAttribute('data-path')||'').trim();
+    const routes={'dashboard':'index.html','projects':'projects.html','create-persona':'create-persona.html','persona-library':'persona-library.html','research-and-surveys':'research-insights.html','insights-and-analytics':'research-insights.html','compare-personas':'compare-personas.html','reports-and-exports':'reports.html','settings':'settings.html'};
+    if(routes[p]) a.href=routes[p];
+  });
+  document.querySelectorAll('form').forEach(form=>{
+    form.addEventListener('submit',function(e){
+      if(form.dataset.allowNative==='true') return;
+      e.preventDefault();
+      let note=form.querySelector('[data-integration-feedback]');
+      if(!note){note=document.createElement('p');note.dataset.integrationFeedback='true';note.className='mt-3 text-sm';form.appendChild(note)}
+      note.textContent='This screen is connected as a UI prototype. Persistent account, email, and server actions require backend configuration.';
+      note.setAttribute('role','status');
+    });
+  });
+})();
+</script>
+</body></html>

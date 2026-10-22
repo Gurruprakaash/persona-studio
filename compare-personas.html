@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed":"#0f0069","surface-bright":"#f8f9ff","on-tertiary-fixed":"#2a1700","on-primary":"#ffffff","surface-container":"#e6eeff","primary-container":"#4f46e5","secondary":"#006a63","surface-dim":"#ccdbf3","background":"#f8f9ff","primary-fixed":"#e2dfff","inverse-primary":"#c3c0ff","on-surface-variant":"#464555","error":"#ba1a1a","on-primary-container":"#dad7ff","primary":"#3525cd","on-surface":"#0d1c2e","surface-tint":"#4d44e3","on-secondary-fixed-variant":"#00504a","on-tertiary-fixed-variant":"#653e00","primary-fixed-dim":"#c3c0ff","surface-container-highest":"#d5e3fc","surface-container-high":"#dce9ff","tertiary-container":"#885500","inverse-surface":"#233144","secondary-fixed":"#9cf2e8","inverse-on-surface":"#eaf1ff","on-background":"#0d1c2e","outline":"#777587","tertiary-fixed-dim":"#ffb95f","on-tertiary":"#ffffff","on-secondary-fixed":"#00201d","on-secondary-container":"#006f67","on-primary-fixed-variant":"#3323cc","outline-variant":"#c7c4d8","on-error-container":"#93000a","secondary-container":"#99efe5","error-container":"#ffdad6","on-error":"#ffffff","on-secondary":"#ffffff","surface-container-lowest":"#ffffff","surface":"#f8f9ff","surface-container-low":"#eff4ff","secondary-fixed-dim":"#80d5cb","tertiary-fixed":"#ffddb8","on-tertiary-container":"#ffd4a4","surface-variant":"#d5e3fc","tertiary":"#684000"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","gutter-lg":"2rem","margin-mobile":"1rem","gutter-sm":"1rem","gutter":"1.5rem","space-xs":"0.25rem","margin":"2rem","space-sm":"0.5rem","space-xl":"2rem","space-md":"1rem"},"fontFamily":{"headline-lg":["Inter"],"headline-sm":["Inter"],"headline-xl":["Inter"],"headline-md":["Inter"],"body-lg":["Inter"],"label-md":["Inter"],"body-md":["Inter"],"headline-xl-mobile":["Inter"],"label-sm":["Inter"],"body-sm":["Inter"]},"fontSize":{"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0","fontWeight":"400"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-[260px] bg-surface-container-lowest border-r border-outline-variant/40 z-50 flex flex-col justify-between select-none"><div class="flex flex-col flex-1 min-h-0"><div class="px-space-md py-space-md border-b border-outline-variant/30 flex items-center gap-space-sm"><img alt="Persona Studio Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VeT56ZrX5FIKjU7W3pvQom45vdo_jp7DQyvM7vTpFHOM3G1t6Zz_2x_puUzNF0RM1_NxYFq0sBrRbDN4rtuue2ArYmtLoulxhbwHHTNleCDYdOvu9Gw2FNz6krsHanOpfc_qlVG06_f3xIs2twC6g7UsVnrCKHRJl6VX1PV-LqQ8tbZHSQf85mPnarL9I3uk3CRSs-Y6KD-31Uk4_QSsSGSh3sgSx94GI-qAdbJow6-sFsnTitxnboLQ"/><div class="flex flex-col overflow-hidden"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate leading-tight">Persona Studio</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate font-normal">Research &amp; Persona Intelligence</span></div></div><nav class="flex-1 px-space-sm py-space-md overflow-y-auto space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-medium rounded-lg"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="index.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Dashboard</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="projects" href="projects.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">folder_open</span><span class="font-body-md text-body-md">Projects</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="create-persona" href="create-persona.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">person_add</span><span class="font-body-md text-body-md">Create Persona</span></div><span class="material-symbols-outlined text-primary text-[18px]">add</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="persona-library" href="persona-library.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-body-md text-body-md">Persona Library</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="research-and-surveys" href="research-insights.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">quiz</span><span class="font-body-md text-body-md">Research &amp; Surveys</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="insights-and-analytics" href="research-insights.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">insights</span><span class="font-body-md text-body-md">Insights &amp; Analytics</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="compare-personas" href="compare-personas.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">compare_arrows</span><span class="font-body-md text-body-md">Compare Personas</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="reports-and-exports" href="reports.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">description</span><span class="font-body-md text-body-md">Reports &amp; Exports</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="settings.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-body-md text-body-md">Settings</span></div></a></nav></div><div class="p-space-sm border-t border-outline-variant/30 space-y-space-sm bg-surface-container-lowest"><div class="px-space-sm py-space-xs rounded-lg bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-xs overflow-hidden"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">workspaces</span><span class="font-label-md text-label-md text-on-surface font-medium truncate">FinTech UX Workspace</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">unfold_more</span></div><div class="flex items-center justify-between px-space-sm py-space-xs"><div class="flex items-center gap-space-sm overflow-hidden"><img alt="Profile" class="w-8 h-8 rounded-full object-cover flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-pQs0EIfedPPV6rHB1qeYdlav5NPjetMfKgHJ53Czj-Vs3e82F7ZAgF2yM8aSvRBdxYW1kD_LpRfWboPhr6CIYdIiK0jZ_qs_JfQMVKxcUQJ8aGzwoFjZIu4cPkMlKdAqJRIEML6U2H1EcCK_X5kvbuBHt4Ad0pWDUpFcjLW2su9Zd1_HBla9TPf1-7uWKQa91YctZKv583RHnsb52gwjqAcKOHboBnif-W0IXo20eEGg-chDjLOI"/><div class="flex flex-col overflow-hidden"><span class="font-label-md text-label-md text-on-surface font-semibold truncate leading-tight">Elena Rostova</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate font-normal">Lead UX Researcher</span></div></div><button class="p-1 text-on-surface-variant hover:text-on-surface rounded hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">more_vert</span></button></div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md border-b border-outline-variant/30 z-40 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-xs text-on-surface-variant font-body-md text-body-md"><span class="hover:text-on-surface transition-colors cursor-pointer">Workspace</span><span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span><span class="text-on-surface font-medium">Dashboard</span></div><div class="flex items-center gap-space-md"><div class="relative flex items-center w-64"><span class="material-symbols-outlined absolute left-space-sm text-[18px] text-outline">search</span><input class="w-full h-9 pl-9 pr-12 rounded-lg bg-surface-container-low border border-outline-variant/40 text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container" placeholder="Search personas, insights..." type="text"/><span class="absolute right-space-sm font-label-sm text-label-sm bg-surface-container-high px-1.5 py-0.5 rounded text-on-surface-variant font-medium border border-outline-variant/50">⌘K</span></div><div class="h-5 w-[1px] bg-outline-variant/40"></div><button class="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-tertiary-fixed-dim ring-2 ring-surface-container-lowest"></span></button><a class="inline-flex items-center gap-space-xs h-9 px-space-md bg-primary-container hover:bg-primary text-on-primary rounded-lg font-label-md text-label-md font-medium shadow-sm transition-colors" data-path="create-persona" href="create-persona.html"><span class="material-symbols-outlined text-[18px]">add</span><span>Create Persona</span></a><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-pQs0EIfedPPV6rHB1qeYdlav5NPjetMfKgHJ53Czj-Vs3e82F7ZAgF2yM8aSvRBdxYW1kD_LpRfWboPhr6CIYdIiK0jZ_qs_JfQMVKxcUQJ8aGzwoFjZIu4cPkMlKdAqJRIEML6U2H1EcCK_X5kvbuBHt4Ad0pWDUpFcjLW2su9Zd1_HBla9TPf1-7uWKQa91YctZKv583RHnsb52gwjqAcKOHboBnif-W0IXo20eEGg-chDjLOI"/><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div></div></header><main class="relative pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Command & Action Bar -->
+<div class="w-full bg-surface-container-lowest shadow-sm px-margin py-space-md">
+<div class="max-w-[1440px] mx-auto flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<!-- Title & Breadcrumbs -->
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md mb-1">
+<span class="hover:text-primary transition-colors cursor-pointer">Persona Library</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="text-on-surface font-semibold">Comparison Matrix</span>
+<span class="ml-2 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant text-[11px] font-semibold">2 Selected</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Compare Personas</h1>
+<span class="material-symbols-outlined text-outline cursor-help text-[18px]" title="Side-by-side behavioral alignment and empirical divergence tracking">info</span>
+</div>
+</div>
+<!-- Controls & Primary Actions -->
+<div class="flex items-center flex-wrap gap-space-sm">
+<!-- Highlight Differences Switch -->
+<label class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container-low cursor-pointer select-none group hover:bg-surface-container transition-colors">
+<input checked="" class="sr-only peer" id="diffToggle" type="checkbox"/>
+<div class="w-8 h-4 bg-outline-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-primary-container relative"></div>
+<span class="font-label-md text-label-md text-on-surface font-medium">Highlight Key Differences</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary">bolt</span>
+</label>
+<!-- Export Dropdown Button -->
+<div class="relative inline-block">
+<button class="inline-flex items-center gap-space-xs h-9 px-space-md bg-surface-container-lowest hover:bg-surface-container-low text-on-surface rounded-lg font-label-md text-label-md font-medium shadow-sm transition-colors border border-outline-variant/30" id="exportBtn" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">file_download</span>
+<span>Export Comparison</span>
+<span class="material-symbols-outlined text-[16px] text-outline">expand_more</span>
+</button>
+<div class="hidden absolute right-0 mt-1 w-44 rounded-xl bg-surface-container-lowest shadow-lg py-1 z-50" id="exportMenu">
+<a class="flex items-center gap-2 px-4 py-2 font-label-md text-label-md text-on-surface hover:bg-surface-container-low transition-colors" href="#export-pdf">
+<span class="material-symbols-outlined text-[18px] text-primary">picture_as_pdf</span> Executive PDF Summary
+            </a>
+<a class="flex items-center gap-2 px-4 py-2 font-label-md text-label-md text-on-surface hover:bg-surface-container-low transition-colors" href="#export-csv">
+<span class="material-symbols-outlined text-[18px] text-secondary">table_view</span> Full Matrix (CSV/XLSX)
+            </a>
+</div>
+</div>
+<!-- Add Another Persona CTA -->
+<button class="inline-flex items-center gap-space-xs h-9 px-space-md bg-primary-container hover:bg-primary text-on-primary rounded-lg font-label-md text-label-md font-medium shadow-sm transition-all hover:shadow-md" type="button">
+<span class="material-symbols-outlined text-[18px]">group_add</span>
+<span>Add Another Persona</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Main Comparison Canvas -->
+<div class="max-w-[1440px] w-full mx-auto px-margin py-space-lg flex flex-col gap-space-lg">
+<!-- Sticky Comparison Header Columns -->
+<div class="sticky top-16 z-30 bg-background/95 backdrop-blur-md pb-space-sm pt-2 -mx-2 px-2">
+<div class="grid grid-cols-12 gap-space-md items-stretch">
+<!-- Sticky Sidebar Anchor / Metrics Overview -->
+<div class="col-span-12 md:col-span-3 flex flex-col justify-between p-space-md rounded-xl bg-surface-container-lowest shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Matrix Alignment</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">High Divergence</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Comparing retail consumer risk heuristics against enterprise reliability mandates.</p>
+</div>
+<div class="mt-space-md flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Synthesized Dimensions</span>
+<span class="font-label-md text-label-md font-bold text-primary">14 Attributes</span>
+</div>
+</div>
+<!-- Persona 1 Header: Sarah Chen -->
+<div class="col-span-12 md:col-span-4 rounded-xl bg-surface-container-lowest shadow-sm p-space-md flex flex-col justify-between relative group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm ring-2 ring-primary-fixed" data-alt="Portrait photo of Sarah Chen, a 29 year old Asian female professional wearing a modern casual blazer, soft natural indoor window lighting, friendly approachable expression, shallow depth of field, photorealistic, sharp focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFNNjTSn33FEHZ-PL9zg_PJXG9xt4QnR4rGHL0Z2FYBBVTwczfKUZfEsB3qekZgL1ZAyg_xfB4eZ12w3UZALrSWu9AB43ftxexhTvZoS3DHU-CtARP-PuekAww_oDNTyHJAa9R1lRpYZe2S89LERUAnQL7jMPP-tK3if00ga6gdLXRJJvuY4Ihsb52H-oooM49XrKIUU1QkxN_pIRAlY-ojdTITxtVnn0CEDnhDQi4Rgn5H1kcN_9_"/>
+<span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-surface-container-lowest" title="Active validation phase"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Sarah Chen</h3>
+<span class="material-symbols-outlined text-[16px] text-primary" title="Verified Cohort">verified</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate font-medium">The Cautious First-Time Investor</span>
+</div>
+</div>
+<!-- Remove Button -->
+<button class="p-1 rounded-md text-outline hover:text-error hover:bg-error-container/40 transition-colors" title="Remove Sarah Chen" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="mt-space-md flex items-center justify-between flex-wrap gap-y-2">
+<div class="flex items-center gap-1.5">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container/80 text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">psychology</span> 92% Evidence
+              </span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">FinTech Retail</span>
+</div>
+<a class="font-label-md text-label-md text-primary font-medium hover:underline inline-flex items-center gap-0.5" href="#sarah-profile">
+<span>View Profile</span>
+<span class="material-symbols-outlined text-[14px]">north_east</span>
+</a>
+</div>
+</div>
+<!-- Persona 2 Header: Marcus Vance -->
+<div class="col-span-12 md:col-span-4 rounded-xl bg-surface-container-lowest shadow-sm p-space-md flex flex-col justify-between relative group hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<img class="w-14 h-14 rounded-full object-cover shadow-sm ring-2 ring-primary-fixed" data-alt="Portrait photograph of Marcus Vance, a 38-year-old African American male systems engineer wearing glasses and a minimalist charcoal merino crewneck, subtle tech studio backdrop, confident composed look, soft ambient light, editorial quality" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIOz-0_l6KJjaM2J9kOT5tZ9uHY9x5Tn33rFk2qQumn31CPqe-uItXZf7SMGcgKF57M8_JruoG1XrFCb4YP8EztfMKrL79rvNbpyIcdFe-zjA5g1xWNUn-vz1vxjPu5ek7arYfsr7Jqa6GUKukB6eZ1b0RXaWLGw1EhmQC8lE5WEAo7qX3NBVcEJ97WVnxAPwlHwocVncG57Naam9g5cgNG3Atmfot3pv9ki1Mu4tP10gNLCyta54l"/>
+<span class="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-surface-container-lowest" title="Continuous feedback active"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Marcus Vance</h3>
+<span class="material-symbols-outlined text-[16px] text-primary" title="Enterprise Archetype">verified</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate font-medium">Enterprise DevOps Lead</span>
+</div>
+</div>
+<!-- Remove Button -->
+<button class="p-1 rounded-md text-outline hover:text-error hover:bg-error-container/40 transition-colors" title="Remove Marcus Vance" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="mt-space-md flex items-center justify-between flex-wrap gap-y-2">
+<div class="flex items-center gap-1.5">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container/80 text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">psychology</span> 95% Evidence
+              </span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Cloud &amp; Infra</span>
+</div>
+<a class="font-label-md text-label-md text-primary font-medium hover:underline inline-flex items-center gap-0.5" href="#marcus-profile">
+<span>View Profile</span>
+<span class="material-symbols-outlined text-[14px]">north_east</span>
+</a>
+</div>
+</div>
+<!-- Persona 3 Placeholder: Empty Add Slot -->
+<div class="col-span-12 md:col-span-1 flex flex-col items-center justify-center rounded-xl bg-surface-container-low/70 hover:bg-surface-container-high transition-colors p-space-sm cursor-pointer group text-center" title="Click to add third persona slot">
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform text-primary">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium mt-1 leading-tight">Add slot</span>
+</div>
+</div>
+</div>
+<!-- Category 1: Demographics & Operational Context -->
+<section class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden">
+<!-- Section Category Header Strip -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">badge</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Demographics &amp; Context</h2>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Base Attributes</span>
+</div>
+<!-- Comparison Row 1.1: Age / Role / Income -->
+<div class="grid grid-cols-12 p-space-md items-center hover:bg-surface-container-lowest/80 transition-colors">
+<div class="col-span-12 md:col-span-3 pr-space-md mb-2 md:mb-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Age, Role &amp; Income</span>
+<span class="font-body-sm text-body-sm text-outline">Socio-economic profile and compensation tier</span>
+</div>
+<!-- Sarah Value -->
+<div class="col-span-12 md:col-span-4 p-space-sm rounded-lg bg-surface-container-low/50">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface">29 years old</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-lowest px-2 py-0.5 rounded shadow-xs">$85,000 / yr</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Associate Marketing Director at regional retail logistics firm.</p>
+</div>
+<!-- Marcus Value (With difference badge) -->
+<div class="col-span-12 md:col-span-4 md:col-start-8 p-space-sm rounded-lg bg-surface-container-low/50 diff-target">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface">38 years old</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-lowest px-2 py-0.5 rounded shadow-xs">$195,000 / yr</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Head of Cloud Infrastructure &amp; Site Reliability Engineering.</p>
+</div>
+</div>
+<div class="h-[1px] bg-surface-container-high mx-space-md"></div>
+<!-- Comparison Row 1.2: Decision Autonomy -->
+<div class="grid grid-cols-12 p-space-md items-center hover:bg-surface-container-lowest/80 transition-colors">
+<div class="col-span-12 md:col-span-3 pr-space-md mb-2 md:mb-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Decision Autonomy</span>
+<span class="font-body-sm text-body-sm text-outline">Governance level and permission thresholds</span>
+</div>
+<!-- Sarah Value -->
+<div class="col-span-12 md:col-span-4 p-space-sm rounded-lg bg-surface-container-low/40">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-amber-50 text-amber-900 font-label-md text-label-md mb-1.5 font-medium">
+<span class="material-symbols-outlined text-[16px] text-amber-700">lock_clock</span> Guided / Assisted Frameworks
+          </div>
+<p class="font-body-md text-body-md text-on-surface-variant">Requires contextual micro-validation, step confirmation, and visual safety rails before committing capital.</p>
+</div>
+<!-- Marcus Value -->
+<div class="col-span-12 md:col-span-4 md:col-start-8 p-space-sm rounded-lg bg-surface-container-low/40 diff-target">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-indigo-50 text-indigo-900 font-label-md text-label-md mb-1.5 font-medium">
+<span class="material-symbols-outlined text-[16px] text-indigo-700">admin_panel_settings</span> Full Administrative Autonomy
+          </div>
+<p class="font-body-md text-body-md text-on-surface-variant">Has root access to high-tier budget approvals ($500k+ ARR software contracts) and direct IAM pipeline authority.</p>
+</div>
+</div>
+</section>
+<!-- Category 2: Primary Goals & Motivations -->
+<section class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden">
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">flag</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Primary Goals &amp; Motivations</h2>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Value Drivers</span>
+</div>
+<div class="grid grid-cols-12 p-space-md items-start">
+<div class="col-span-12 md:col-span-3 pr-space-md mb-3 md:mb-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold block">North Star Objective</span>
+<span class="font-body-sm text-body-sm text-outline">Core user success criterion for product adoption</span>
+</div>
+<!-- Sarah Goals -->
+<div class="col-span-12 md:col-span-4 p-space-md rounded-xl bg-surface-container-low/40 space-y-space-sm">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">savings</span>
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface block">Build $22,000 Liquid Buffer</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">Establish resilient 6-month safety net without speculative volatility or complex tax implications.</p>
+</div>
+</div>
+<div class="flex items-start gap-2 pt-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">translate</span>
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface block">Plain-English Index Funds</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">Prefers pre-curated thematic baskets (e.g. Clean Energy ESG) over standalone ticker picks.</p>
+</div>
+</div>
+<!-- Quote Pill -->
+<div class="p-2.5 rounded-lg bg-surface-container-lowest shadow-xs text-on-surface-variant font-body-sm text-body-sm italic">
+            “I want the software to tell me I won't ruin my life if the market dips 3% tomorrow.”
+          </div>
+</div>
+<!-- Marcus Goals -->
+<div class="col-span-12 md:col-span-4 md:col-start-8 p-space-md rounded-xl bg-surface-container-low/40 space-y-space-sm diff-target">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">speed</span>
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface block">99.999% SLA Uptime Compliance</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">Zero-downtime rolling deploys across 4 global cloud regions with sub-second rollback triggers.</p>
+</div>
+</div>
+<div class="flex items-start gap-2 pt-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">security</span>
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface block">Automated Kubernetes Security</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">Continuous runtime CVE vulnerability scanning integrated with automated git-merge blockers.</p>
+</div>
+</div>
+<!-- Quote Pill -->
+<div class="p-2.5 rounded-lg bg-surface-container-lowest shadow-xs text-on-surface-variant font-body-sm text-body-sm italic">
+            “Give me raw log export APIs and webhook triggers. Don't hide anomalies behind friendly cartoons.”
+          </div>
+</div>
+</div>
+</section>
+<!-- Category 3: Critical Pain Points & Churn Risks (Subtle Amber Highlight Applied) -->
+<section class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden">
+<div class="px-space-md py-space-sm bg-tertiary-fixed/30 flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[20px]">warning</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Critical Pain Points &amp; Churn Risks</h2>
+</div>
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-tertiary">Retention Risk Vectors</span>
+</div>
+<div class="grid grid-cols-12 p-space-md gap-space-md items-stretch">
+<div class="col-span-12 md:col-span-3 pr-space-md">
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Friction Triggers</span>
+<span class="font-body-sm text-body-sm text-outline">Behaviors causing immediate bounce, session abandonment, or subscription churn</span>
+<div class="mt-4 p-space-sm rounded-lg bg-amber-50/80">
+<div class="flex items-center gap-1.5 text-amber-900 font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[16px] text-amber-700">crisis_alert</span> High Divergence Note
+            </div>
+<p class="font-body-sm text-body-sm text-amber-950 mt-1">Sarah abandons on cognitive overload; Marcus abandons on capability limits and vendor opacity.</p>
+</div>
+</div>
+<!-- Sarah Pain Points (Highlighted Difference Amber Tone) -->
+<div class="col-span-12 md:col-span-4 p-space-md rounded-xl bg-amber-50/40 relative">
+<div class="flex items-center justify-between mb-2">
+<span class="px-2 py-0.5 rounded text-amber-900 bg-amber-100 font-label-sm text-label-sm font-bold uppercase tracking-wider">High Churn Risk</span>
+<span class="font-label-sm text-label-sm text-outline">Severity 4.8 / 5</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">Hidden Spreads &amp; Analysis Paralysis</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-sm leading-relaxed">
+            Candlestick charting modules and jargon-dense order books cause immediate anxiety. Sarah closes the application whenever unexpected bid-ask spread spreads emerge without explicit upfront cost guarantees.
+          </p>
+<div class="space-y-1.5">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-amber-600 text-[18px]">cancel</span>
+<span>Withdrawal delays exceeding 48 hours</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-amber-600 text-[18px]">cancel</span>
+<span>Aggressive push notifications during market dips</span>
+</div>
+</div>
+</div>
+<!-- Marcus Pain Points (Highlighted Difference Amber Tone) -->
+<div class="col-span-12 md:col-span-4 md:col-start-8 p-space-md rounded-xl bg-amber-50/40 relative diff-target">
+<div class="flex items-center justify-between mb-2">
+<span class="px-2 py-0.5 rounded text-amber-900 bg-amber-100 font-label-sm text-label-sm font-bold uppercase tracking-wider">Critical SLA Blocker</span>
+<span class="font-label-sm text-label-sm text-outline">Severity 5.0 / 5</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">Unplanned Downtime &amp; Manual Audit Gruntwork</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-sm leading-relaxed">
+            Marcus cancels enterprise contracts when platforms experience silent status page delays during outages. Forcing compliance officers to manually export CSV logs during SOC-2 and HIPAA audits is an instant RFP disqualifier.
+          </p>
+<div class="space-y-1.5">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-amber-600 text-[18px]">cancel</span>
+<span>Missing granular role-based RBAC enforcement</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-amber-600 text-[18px]">cancel</span>
+<span>Proprietary metric storage with no OpenTelemetry sink</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Category 4: Behavioral Scales & Tech Affinity (Visual Sliders / Progress Bars) -->
+<section class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden">
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Behavioral Scales &amp; Tech Affinity</h2>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Quantitative Trait Vectors</span>
+</div>
+<div class="p-space-md space-y-space-lg">
+<!-- Behavioral Slider 1: Risk Tolerance -->
+<div class="grid grid-cols-12 items-center gap-space-md">
+<div class="col-span-12 md:col-span-3">
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Risk Tolerance</span>
+<span class="font-body-sm text-body-sm text-outline">Financial &amp; procedural exposure comfort</span>
+</div>
+<!-- Sarah Bar: 30% -->
+<div class="col-span-12 md:col-span-4">
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Conservative Tier</span>
+<span class="font-label-md text-label-md font-bold text-secondary">30%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden flex">
+<div class="bg-secondary h-full rounded-full transition-all duration-700" style="width: 30%;"></div>
+</div>
+<div class="flex justify-between font-label-sm text-[10px] text-outline mt-1">
+<span>Risk Averse</span>
+<span>Growth Speculative</span>
+</div>
+</div>
+<!-- Marcus Bar: 65% -->
+<div class="col-span-12 md:col-span-4 md:col-start-8 diff-target">
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Enterprise Calculated</span>
+<span class="font-label-md text-label-md font-bold text-primary">65%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden flex">
+<div class="bg-primary-container h-full rounded-full transition-all duration-700" style="width: 65%;"></div>
+</div>
+<div class="flex justify-between font-label-sm text-[10px] text-outline mt-1">
+<span>System Stability First</span>
+<span>Aggressive Automation</span>
+</div>
+</div>
+</div>
+<div class="h-[1px] bg-surface-container-high"></div>
+<!-- Behavioral Slider 2: Interface Density Preference -->
+<div class="grid grid-cols-12 items-center gap-space-md">
+<div class="col-span-12 md:col-span-3">
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Interface Density</span>
+<span class="font-body-sm text-body-sm text-outline">UI payload complexity tolerance</span>
+</div>
+<!-- Sarah Bar: 20% -->
+<div class="col-span-12 md:col-span-4">
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Clean Minimalist Guided</span>
+<span class="font-label-md text-label-md font-bold text-secondary">20%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden flex">
+<div class="bg-secondary h-full rounded-full transition-all duration-700" style="width: 20%;"></div>
+</div>
+<div class="flex justify-between font-label-sm text-[10px] text-outline mt-1">
+<span>Conversational Cards</span>
+<span>Complex Data Grid</span>
+</div>
+</div>
+<!-- Marcus Bar: 90% -->
+<div class="col-span-12 md:col-span-4 md:col-start-8 diff-target">
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Dense Data Cockpit / CLI</span>
+<span class="font-label-md text-label-md font-bold text-primary">90%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden flex">
+<div class="bg-primary-container h-full rounded-full transition-all duration-700" style="width: 90%;"></div>
+</div>
+<div class="flex justify-between font-label-sm text-[10px] text-outline mt-1">
+<span>Conversational Cards</span>
+<span>Complex Data Grid</span>
+</div>
+</div>
+</div>
+<div class="h-[1px] bg-surface-container-high"></div>
+<!-- Behavioral Slider 3: Primary Platform Allocation -->
+<div class="grid grid-cols-12 items-center gap-space-md">
+<div class="col-span-12 md:col-span-3">
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Primary Platform</span>
+<span class="font-body-sm text-body-sm text-outline">Device footprint &amp; session context</span>
+</div>
+<!-- Sarah Mobile vs Marcus Desktop -->
+<div class="col-span-12 md:col-span-4 p-space-sm rounded-lg bg-surface-container-low/50">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">smartphone</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">85% Mobile Native</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">15% Web Portal</span>
+</div>
+<!-- Visual Segmented Bar -->
+<div class="w-full bg-surface-container-high h-2 rounded-full mt-2 flex overflow-hidden">
+<div class="bg-secondary h-full" style="width: 85%;"></div>
+<div class="bg-surface-dim h-full" style="width: 15%;"></div>
+</div>
+</div>
+<div class="col-span-12 md:col-span-4 md:col-start-8 p-space-sm rounded-lg bg-surface-container-low/50 diff-target">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">desktop_windows</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">95% Multi-Monitor Desktop</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">5% Mobile Pager</span>
+</div>
+<!-- Visual Segmented Bar -->
+<div class="w-full bg-surface-container-high h-2 rounded-full mt-2 flex overflow-hidden">
+<div class="bg-primary-container h-full" style="width: 95%;"></div>
+<div class="bg-surface-dim h-full" style="width: 5%;"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Category 5: Empirical Research Backing -->
+<section class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden mb-space-lg">
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">science</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Empirical Research Backing</h2>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Artifact Provenance</span>
+</div>
+<div class="grid grid-cols-12 p-space-md gap-space-md">
+<div class="col-span-12 md:col-span-3 pr-space-md">
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Source Datasets</span>
+<span class="font-body-sm text-body-sm text-outline">Primary evidence corpus grounding these synthesized behavioral nodes</span>
+<div class="mt-4 flex items-center gap-2 text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-secondary text-[18px]">fact_check</span>
+<span>Audit-Ready Insights</span>
+</div>
+</div>
+<!-- Sarah Research Artifacts -->
+<div class="col-span-12 md:col-span-4 p-space-md rounded-xl bg-surface-container-low/40 space-y-3">
+<div class="flex items-center justify-between pb-2 border-b border-surface-container-high">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">record_voice_over</span>
+<span class="font-label-md text-label-md text-on-surface font-medium">User Interviews</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">12 Sessions</span>
+</div>
+<div class="flex items-center justify-between pb-2 border-b border-surface-container-high">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">quiz</span>
+<span class="font-label-md text-label-md text-on-surface font-medium">Quantitative Surveys</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">128 Responses</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">lab_profile</span>
+<span class="font-label-md text-label-md text-on-surface font-medium">Moderated Usability Runs</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">6 Cohorts</span>
+</div>
+</div>
+<!-- Marcus Research Artifacts -->
+<div class="col-span-12 md:col-span-4 md:col-start-8 p-space-md rounded-xl bg-surface-container-low/40 space-y-3 diff-target">
+<div class="flex items-center justify-between pb-2 border-b border-surface-container-high">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">terminal</span>
+<span class="font-label-md text-label-md text-on-surface font-medium">Technical Deep-Dives</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">8 Sessions</span>
+</div>
+<div class="flex items-center justify-between pb-2 border-b border-surface-container-high">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">receipt_long</span>
+<span class="font-label-md text-label-md text-on-surface font-medium">Telemetry &amp; System Logs</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">14 Infra Traces</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">gavel</span>
+<span class="font-label-md text-label-md text-on-surface font-medium">SecOps Panel Reviews</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">3 Audits</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>
+  // Simple interaction for difference highlight toggle & dropdown
+  const diffToggle = document.getElementById('diffToggle');
+  const exportBtn = document.getElementById('exportBtn');
+  const exportMenu = document.getElementById('exportMenu');
+
+  if (diffToggle) {
+    diffToggle.addEventListener('change', (e) => {
+      const targets = document.querySelectorAll('.diff-target');
+      targets.forEach(el => {
+        if (e.target.checked) {
+          el.classList.add('ring-2', 'ring-primary/20', 'bg-surface-container-low');
+        } else {
+          el.classList.remove('ring-2', 'ring-primary/20', 'bg-surface-container-low');
+        }
+      });
+    });
+    // Initialize default state
+    if (diffToggle.checked) {
+      document.querySelectorAll('.diff-target').forEach(el => {
+        el.classList.add('ring-2', 'ring-primary/20');
+      });
+    }
+  }
+
+  if (exportBtn && exportMenu) {
+    exportBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      exportMenu.classList.toggle('hidden');
+    });
+    document.addEventListener('click', () => {
+      exportMenu.classList.add('hidden');
+    });
+  }
+</script></main></div>
+<script>
+(function(){
+  const root=document.documentElement;
+  try {
+    const theme=JSON.parse(localStorage.getItem('personaStudioTheme')||'null');
+    if(theme){
+      if(theme.primary) root.style.setProperty('--primary',theme.primary);
+      if(theme.secondary) root.style.setProperty('--secondary',theme.secondary);
+      if(theme.accent) root.style.setProperty('--accent',theme.accent);
+    }
+  } catch(e){}
+  document.querySelectorAll('a[data-path]').forEach(a=>{
+    const p=(a.getAttribute('data-path')||'').trim();
+    const routes={'dashboard':'index.html','projects':'projects.html','create-persona':'create-persona.html','persona-library':'persona-library.html','research-and-surveys':'research-insights.html','insights-and-analytics':'research-insights.html','compare-personas':'compare-personas.html','reports-and-exports':'reports.html','settings':'settings.html'};
+    if(routes[p]) a.href=routes[p];
+  });
+  document.querySelectorAll('form').forEach(form=>{
+    form.addEventListener('submit',function(e){
+      if(form.dataset.allowNative==='true') return;
+      e.preventDefault();
+      let note=form.querySelector('[data-integration-feedback]');
+      if(!note){note=document.createElement('p');note.dataset.integrationFeedback='true';note.className='mt-3 text-sm';form.appendChild(note)}
+      note.textContent='This screen is connected as a UI prototype. Persistent account, email, and server actions require backend configuration.';
+      note.setAttribute('role','status');
+    });
+  });
+})();
+</script>
+</body></html>

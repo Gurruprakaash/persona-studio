@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed":"#0f0069","surface-bright":"#f8f9ff","on-tertiary-fixed":"#2a1700","on-primary":"#ffffff","surface-container":"#e6eeff","primary-container":"#4f46e5","secondary":"#006a63","surface-dim":"#ccdbf3","background":"#f8f9ff","primary-fixed":"#e2dfff","inverse-primary":"#c3c0ff","on-surface-variant":"#464555","error":"#ba1a1a","on-primary-container":"#dad7ff","primary":"#3525cd","on-surface":"#0d1c2e","surface-tint":"#4d44e3","on-secondary-fixed-variant":"#00504a","on-tertiary-fixed-variant":"#653e00","primary-fixed-dim":"#c3c0ff","surface-container-highest":"#d5e3fc","surface-container-high":"#dce9ff","tertiary-container":"#885500","inverse-surface":"#233144","secondary-fixed":"#9cf2e8","inverse-on-surface":"#eaf1ff","on-background":"#0d1c2e","outline":"#777587","tertiary-fixed-dim":"#ffb95f","on-tertiary":"#ffffff","on-secondary-fixed":"#00201d","on-secondary-container":"#006f67","on-primary-fixed-variant":"#3323cc","outline-variant":"#c7c4d8","on-error-container":"#93000a","secondary-container":"#99efe5","error-container":"#ffdad6","on-error":"#ffffff","on-secondary":"#ffffff","surface-container-lowest":"#ffffff","surface":"#f8f9ff","surface-container-low":"#eff4ff","secondary-fixed-dim":"#80d5cb","tertiary-fixed":"#ffddb8","on-tertiary-container":"#ffd4a4","surface-variant":"#d5e3fc","tertiary":"#684000"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","gutter-lg":"2rem","margin-mobile":"1rem","gutter-sm":"1rem","gutter":"1.5rem","space-xs":"0.25rem","margin":"2rem","space-sm":"0.5rem","space-xl":"2rem","space-md":"1rem"},"fontFamily":{"headline-lg":["Inter"],"headline-sm":["Inter"],"headline-xl":["Inter"],"headline-md":["Inter"],"body-lg":["Inter"],"label-md":["Inter"],"body-md":["Inter"],"headline-xl-mobile":["Inter"],"label-sm":["Inter"],"body-sm":["Inter"]},"fontSize":{"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0","fontWeight":"400"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-[260px] bg-surface-container-lowest border-r border-outline-variant/40 z-50 flex flex-col justify-between select-none"><div class="flex flex-col flex-1 min-h-0"><div class="px-space-md py-space-md border-b border-outline-variant/30 flex items-center gap-space-sm"><img alt="Persona Studio Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VeT56ZrX5FIKjU7W3pvQom45vdo_jp7DQyvM7vTpFHOM3G1t6Zz_2x_puUzNF0RM1_NxYFq0sBrRbDN4rtuue2ArYmtLoulxhbwHHTNleCDYdOvu9Gw2FNz6krsHanOpfc_qlVG06_f3xIs2twC6g7UsVnrCKHRJl6VX1PV-LqQ8tbZHSQf85mPnarL9I3uk3CRSs-Y6KD-31Uk4_QSsSGSh3sgSx94GI-qAdbJow6-sFsnTitxnboLQ"/><div class="flex flex-col overflow-hidden"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate leading-tight">Persona Studio</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate font-normal">Research &amp; Persona Intelligence</span></div></div><nav class="flex-1 px-space-sm py-space-md overflow-y-auto space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-medium rounded-lg"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="index.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Dashboard</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="projects" href="projects.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">folder_open</span><span class="font-body-md text-body-md">Projects</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="create-persona" href="create-persona.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">person_add</span><span class="font-body-md text-body-md">Create Persona</span></div><span class="material-symbols-outlined text-primary text-[18px]">add</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="persona-library" href="persona-library.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-body-md text-body-md">Persona Library</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="research-and-surveys" href="research-insights.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">quiz</span><span class="font-body-md text-body-md">Research &amp; Surveys</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="insights-and-analytics" href="research-insights.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">insights</span><span class="font-body-md text-body-md">Insights &amp; Analytics</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="compare-personas" href="compare-personas.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">compare_arrows</span><span class="font-body-md text-body-md">Compare Personas</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="reports-and-exports" href="reports.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">description</span><span class="font-body-md text-body-md">Reports &amp; Exports</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="settings.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-body-md text-body-md">Settings</span></div></a></nav></div><div class="p-space-sm border-t border-outline-variant/30 space-y-space-sm bg-surface-container-lowest"><div class="px-space-sm py-space-xs rounded-lg bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-xs overflow-hidden"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">workspaces</span><span class="font-label-md text-label-md text-on-surface font-medium truncate">FinTech UX Workspace</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">unfold_more</span></div><div class="flex items-center justify-between px-space-sm py-space-xs"><div class="flex items-center gap-space-sm overflow-hidden"><img alt="Profile" class="w-8 h-8 rounded-full object-cover flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-pQs0EIfedPPV6rHB1qeYdlav5NPjetMfKgHJ53Czj-Vs3e82F7ZAgF2yM8aSvRBdxYW1kD_LpRfWboPhr6CIYdIiK0jZ_qs_JfQMVKxcUQJ8aGzwoFjZIu4cPkMlKdAqJRIEML6U2H1EcCK_X5kvbuBHt4Ad0pWDUpFcjLW2su9Zd1_HBla9TPf1-7uWKQa91YctZKv583RHnsb52gwjqAcKOHboBnif-W0IXo20eEGg-chDjLOI"/><div class="flex flex-col overflow-hidden"><span class="font-label-md text-label-md text-on-surface font-semibold truncate leading-tight">Elena Rostova</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate font-normal">Lead UX Researcher</span></div></div><button class="p-1 text-on-surface-variant hover:text-on-surface rounded hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">more_vert</span></button></div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md border-b border-outline-variant/30 z-40 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-xs text-on-surface-variant font-body-md text-body-md"><span class="hover:text-on-surface transition-colors cursor-pointer">Workspace</span><span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span><span class="text-on-surface font-medium">Dashboard</span></div><div class="flex items-center gap-space-md"><div class="relative flex items-center w-64"><span class="material-symbols-outlined absolute left-space-sm text-[18px] text-outline">search</span><input class="w-full h-9 pl-9 pr-12 rounded-lg bg-surface-container-low border border-outline-variant/40 text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container" placeholder="Search personas, insights..." type="text"/><span class="absolute right-space-sm font-label-sm text-label-sm bg-surface-container-high px-1.5 py-0.5 rounded text-on-surface-variant font-medium border border-outline-variant/50">⌘K</span></div><div class="h-5 w-[1px] bg-outline-variant/40"></div><button class="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-tertiary-fixed-dim ring-2 ring-surface-container-lowest"></span></button><a class="inline-flex items-center gap-space-xs h-9 px-space-md bg-primary-container hover:bg-primary text-on-primary rounded-lg font-label-md text-label-md font-medium shadow-sm transition-colors" data-path="create-persona" href="create-persona.html"><span class="material-symbols-outlined text-[18px]">add</span><span>Create Persona</span></a><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-pQs0EIfedPPV6rHB1qeYdlav5NPjetMfKgHJ53Czj-Vs3e82F7ZAgF2yM8aSvRBdxYW1kD_LpRfWboPhr6CIYdIiK0jZ_qs_JfQMVKxcUQJ8aGzwoFjZIu4cPkMlKdAqJRIEML6U2H1EcCK_X5kvbuBHt4Ad0pWDUpFcjLW2su9Zd1_HBla9TPf1-7uWKQa91YctZKv583RHnsb52gwjqAcKOHboBnif-W0IXo20eEGg-chDjLOI"/><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div></div></header><main class="relative pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Settings Header & Section Meta -->
+<div class="px-margin py-space-lg bg-surface-container-lowest shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-space-md max-w-7xl mx-auto w-full">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Configuration Suite</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Active Engine v2.4</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Studio Settings</h1>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="inline-flex items-center gap-space-xs px-space-md h-9 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors shadow-sm" id="resetTopBtn" type="button">
+<span class="material-symbols-outlined text-[18px] text-outline">history</span>
+<span>Discard Changes</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md h-9 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md font-semibold transition-colors shadow-sm" id="saveTopBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Save Palette</span>
+</button>
+</div>
+</div>
+<!-- Navigation Tabs -->
+<div class="mt-space-lg max-w-7xl mx-auto w-full">
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1">
+<a class="inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-semibold shadow-sm transition-all whitespace-nowrap" href="#theme">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">palette</span>
+<span>Theme &amp; Brand Palette</span>
+<span class="ml-1 w-2 h-2 rounded-full bg-primary-container"></span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md transition-all whitespace-nowrap" href="#workspace">
+<span class="material-symbols-outlined text-[18px]">group_work</span>
+<span>Workspace &amp; Members</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md transition-all whitespace-nowrap" href="#integrity">
+<span class="material-symbols-outlined text-[18px]">shield</span>
+<span>Research Data Integrity</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md transition-all whitespace-nowrap" href="#exports">
+<span class="material-symbols-outlined text-[18px]">hub</span>
+<span>Exports &amp; Integrations</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md transition-all whitespace-nowrap" href="#profile">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+<span>Account Profile</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Main View Grid Layout -->
+<div class="px-margin py-space-xl max-w-7xl mx-auto w-full">
+<div class="grid grid-cols-12 gap-gutter-lg items-start">
+<!-- Left Column: Theme Engine, Presets & Custom Pickers (7 Cols) -->
+<div class="col-span-12 lg:col-span-7 space-y-space-xl">
+<!-- Engine Intro Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-start justify-between gap-space-md">
+<div>
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary-container/50 text-secondary font-label-sm text-label-sm font-semibold mb-space-xs">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+                Tri-Chromatic Architecture
+              </div>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Three-Colour Theme Engine</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 leading-relaxed">
+                Persona Studio enforces a disciplined three-colour hierarchy: <span class="font-semibold text-primary">Primary</span> (Actions &amp; Shell), <span class="font-semibold text-secondary">Secondary</span> (Evidence &amp; Confidence), and <span class="font-semibold text-tertiary">Accent</span> (Alerts &amp; Friction).
+              </p>
+</div>
+<div class="hidden sm:flex flex-col items-center justify-center p-space-sm bg-surface-container-low rounded-lg text-center min-w-[92px]">
+<span class="material-symbols-outlined text-primary text-[24px]">contrast</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold mt-1">WCAG 2.1</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">AAA Target</span>
+</div>
+</div>
+</div>
+<!-- Presets Selection Grid -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Curated Studio Presets</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Standardized analytical palettes built for enterprise research synthesis.</p>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-1 bg-surface-container-high rounded text-on-surface-variant">6 Presets Available</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md" id="presetsContainer">
+<!-- Preset 1: Active Default -->
+<button class="preset-card group relative text-left p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all shadow-sm" data-a="#F59E0B" data-p="#4F46E5" data-preset="indigo" data-s="#0F766E" type="button">
+<div class="flex items-start justify-between mb-space-sm">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Indigo Professional</span>
+<span class="material-symbols-outlined text-primary text-[18px] preset-check" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<span class="inline-block mt-0.5 px-1.5 py-0.5 rounded text-[10px] uppercase font-bold tracking-wider bg-primary-container text-on-primary">Current Default</span>
+</div>
+</div>
+<div class="flex items-center gap-2 mt-space-md">
+<div class="h-8 flex-1 rounded-md shadow-sm transition-transform group-hover:scale-[1.02]" style="background-color: #4F46E5;"></div>
+<div class="h-8 flex-1 rounded-md shadow-sm transition-transform group-hover:scale-[1.02]" style="background-color: #0F766E;"></div>
+<div class="h-8 flex-1 rounded-md shadow-sm transition-transform group-hover:scale-[1.02]" style="background-color: #F59E0B;"></div>
+</div>
+<div class="flex justify-between items-center text-[10px] text-on-surface-variant mt-2 font-mono">
+<span>#4F46E5</span>
+<span>#0F766E</span>
+<span>#F59E0B</span>
+</div>
+</button>
+<!-- Preset 2: Ocean Blue -->
+<button class="preset-card group relative text-left p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all shadow-sm" data-a="#F97316" data-p="#2563EB" data-preset="ocean" data-s="#0F766E" type="button">
+<div class="flex items-start justify-between mb-space-sm">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Ocean Blue</span>
+<span class="material-symbols-outlined text-outline-variant text-[18px] preset-check hidden">check_circle</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">High-clarity technical SaaS</span>
+</div>
+</div>
+<div class="flex items-center gap-2 mt-space-md">
+<div class="h-8 flex-1 rounded-md shadow-sm transition-transform group-hover:scale-[1.02]" style="background-color: #2563EB;"></div>
+<div class="h-8 flex-1 rounded-md shadow-sm transition-transform group-hover:scale-[1.02]" style="background-color: #0F766E;"></div>
+<div class="h-8 flex-1 rounded-md shadow-sm transition-transform group-hover:scale-[1.02]" style="background-color: #F97316;"></div>
+</div>
+<div class="flex justify-between items-center text-[10px] text-on-surface-variant mt-2 font-mono">
+<span>#2563EB</span>
+<span>#0F766E</span>
+<span>#F97316</span>
+</div>
+</button>
+<!-- Preset 3: Purple Creative -->
+<button class="preset-card group relative text-left p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all shadow-sm" data-a="#F472B6" data-p="#7C3AED" data-preset="purple" data-s="#0F766E" type="button">
+<div class="flex items-start justify-between mb-space-sm">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Purple Creative</span>
+<span class="material-symbols-outlined text-outline-variant text-[18px] preset-check hidden">check_circle</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Design agency &amp; workshop</span>
+</div>
+</div>
+<div class="flex items-center gap-2 mt-space-md">
+<div class="h-8 flex-1 rounded-md shadow-sm transition-transform group-hover:scale-[1.02]" style="background-color: #7C3AED;"></div>
+<div class="h-8 flex-1 rounded-md shadow-sm transition-transform group-hover:scale-[1.02]" style="background-color: #0F766E;"></div>
+<div class="h-8 flex-1 rounded-md shadow-sm transition-transform group-hover:scale-[1.02]" style="background-color: #F472B6;"></div>
+</div>
+<div class="flex justify-between items-center text-[10px] text-on-surface-variant mt-2 font-mono">
+<span>#7C3AED</span>
+<span>#0F766E</span>
+<span>#F472B6</span>
+</div>
+</button>
+<!-- Preset 4: Forest Green -->
+<button class="preset-card group relative text-left p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all shadow-sm" data-a="#EAB308" data-p="#166534" data-preset="forest" data-s="#1D4ED8" type="button">
+<div class="flex items-start justify-between mb-space-sm">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Forest Green</span>
+<span class="material-symbols-outlined text-outline-variant text-[18px] preset-check hidden">check_circle</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sustainability &amp; bio-fintech</span>
+</div>
+</div>
+<div class="flex items-center gap-2 mt-space-md">
+<div class="h-8 flex-1 rounded-md shadow-sm transition-transform group-hover:scale-[1.02]" style="background-color: #166534;"></div>
+<div class="h-8 flex-1 rounded-md shadow-sm transition-transform group-hover:scale-[1.02]" style="background-color: #1D4ED8;"></div>
+<div class="h-8 flex-1 rounded-md shadow-sm transition-transform group-hover:scale-[1.02]" style="background-color: #EAB308;"></div>
+</div>
+<div class="flex justify-between items-center text-[10px] text-on-surface-variant mt-2 font-mono">
+<span>#166534</span>
+<span>#1D4ED8</span>
+<span>#EAB308</span>
+</div>
+</button>
+<!-- Preset 5: Coral & Navy -->
+<button class="preset-card group relative text-left p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all shadow-sm" data-a="#FB7185" data-p="#0F172A" data-preset="coral" data-s="#0D9488" type="button">
+<div class="flex items-start justify-between mb-space-sm">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Coral &amp; Navy</span>
+<span class="material-symbols-outlined text-outline-variant text-[18px] preset-check hidden">check_circle</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Editorial consumer research</span>
+</div>
+</div>
+<div class="flex items-center gap-2 mt-space-md">
+<div class="h-8 flex-1 rounded-md shadow-sm transition-transform group-hover:scale-[1.02]" style="background-color: #0F172A;"></div>
+<div class="h-8 flex-1 rounded-md shadow-sm transition-transform group-hover:scale-[1.02]" style="background-color: #0D9488;"></div>
+<div class="h-8 flex-1 rounded-md shadow-sm transition-transform group-hover:scale-[1.02]" style="background-color: #FB7185;"></div>
+</div>
+<div class="flex justify-between items-center text-[10px] text-on-surface-variant mt-2 font-mono">
+<span>#0F172A</span>
+<span>#0D9488</span>
+<span>#FB7185</span>
+</div>
+</button>
+<!-- Preset 6: Minimal Monochrome -->
+<button class="preset-card group relative text-left p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all shadow-sm" data-a="#0D9488" data-p="#27272A" data-preset="mono" data-s="#71717A" type="button">
+<div class="flex items-start justify-between mb-space-sm">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Minimal Monochrome</span>
+<span class="material-symbols-outlined text-outline-variant text-[18px] preset-check hidden">check_circle</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Neutral typography focus</span>
+</div>
+</div>
+<div class="flex items-center gap-2 mt-space-md">
+<div class="h-8 flex-1 rounded-md shadow-sm transition-transform group-hover:scale-[1.02]" style="background-color: #27272A;"></div>
+<div class="h-8 flex-1 rounded-md shadow-sm transition-transform group-hover:scale-[1.02]" style="background-color: #71717A;"></div>
+<div class="h-8 flex-1 rounded-md shadow-sm transition-transform group-hover:scale-[1.02]" style="background-color: #0D9488;"></div>
+</div>
+<div class="flex justify-between items-center text-[10px] text-on-surface-variant mt-2 font-mono">
+<span>#27272A</span>
+<span>#71717A</span>
+<span>#0D9488</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Custom Hex Controls -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Fine-Tuning &amp; Color Pickers</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Manually map exact hex codes to match institutional brand tokens.</p>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-secondary-container/40 text-secondary font-medium">3 Roles Defined</span>
+</div>
+<div class="space-y-space-md">
+<!-- Row 1: Primary Brand -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container-high/60 transition-colors">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative w-12 h-12 rounded-lg shadow-sm overflow-hidden flex-shrink-0 cursor-pointer">
+<input class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" id="primaryPicker" type="color" value="#4F46E5"/>
+<div class="w-full h-full" id="primarySwatch" style="background-color: #4F46E5;"></div>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Primary Brand Color</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate block">Primary buttons, active tabs, header focus &amp; core links</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-end sm:self-center">
+<span class="font-mono text-outline font-label-sm">HEX</span>
+<input class="w-28 h-9 px-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-mono font-label-md text-label-md uppercase text-center focus:outline-none focus:ring-1 focus:ring-primary shadow-sm" id="primaryInput" maxlength="7" type="text" value="#4F46E5"/>
+</div>
+</div>
+</div>
+<!-- Row 2: Secondary Supporting -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container-high/60 transition-colors">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative w-12 h-12 rounded-lg shadow-sm overflow-hidden flex-shrink-0 cursor-pointer">
+<input class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" id="secondaryPicker" type="color" value="#0F766E"/>
+<div class="w-full h-full" id="secondarySwatch" style="background-color: #0F766E;"></div>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Secondary Supporting Color</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate block">Evidence badges, verified citations, confidence pills &amp; sample size markers</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-end sm:self-center">
+<span class="font-mono text-outline font-label-sm">HEX</span>
+<input class="w-28 h-9 px-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-mono font-label-md text-label-md uppercase text-center focus:outline-none focus:ring-1 focus:ring-primary shadow-sm" id="secondaryInput" maxlength="7" type="text" value="#0F766E"/>
+</div>
+</div>
+</div>
+<!-- Row 3: Accent Highlight -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container-high/60 transition-colors">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative w-12 h-12 rounded-lg shadow-sm overflow-hidden flex-shrink-0 cursor-pointer">
+<input class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" id="accentPicker" type="color" value="#F59E0B"/>
+<div class="w-full h-full" id="accentSwatch" style="background-color: #F59E0B;"></div>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Accent Highlight Color</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate block">Warnings, unvalidated hypothesis flags, critical churn alerts &amp; friction callouts</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-end sm:self-center">
+<span class="font-mono text-outline font-label-sm">HEX</span>
+<input class="w-28 h-9 px-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-mono font-label-md text-label-md uppercase text-center focus:outline-none focus:ring-1 focus:ring-primary shadow-sm" id="accentInput" maxlength="7" type="text" value="#F59E0B"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Action Buttons -->
+<div class="flex flex-wrap items-center justify-between pt-space-sm gap-space-sm">
+<button class="inline-flex items-center gap-space-xs px-space-md h-10 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors shadow-sm" id="resetDefaultsBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+<span>Reset to Default (Indigo Professional)</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-lg h-10 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md font-semibold transition-all shadow-md hover:shadow-lg" id="saveThemeBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Save Custom Theme</span>
+</button>
+</div>
+</div>
+<!-- Additional Settings Section -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Strict Evidence Mode Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-secondary text-[22px]">policy</span>
+<!-- Custom Toggle Switch -->
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="strictEvidenceToggle" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-2">Strict Evidence Mode</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Requires direct audio quotation or raw interview citation before a persona badge changes to <span class="text-secondary font-medium font-mono">'Validated'</span>.</p>
+</div>
+<div class="pt-space-md">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary font-medium">
+<span class="material-symbols-outlined text-[14px]">check</span> Enforced in 14 Workspaces
+              </span>
+</div>
+</div>
+<!-- Data Export Presets Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-primary text-[22px]">output</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-semibold bg-primary-fixed text-on-primary-fixed">Tokens Sync</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-2">Data Export Presets</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Export schema bundles standard persona demographics alongside style tokens.</p>
+<div class="pt-space-xs space-y-1.5">
+<div class="flex items-center justify-between px-space-sm py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-outline">picture_as_pdf</span> PDF Dossier Summary</span>
+<span class="text-secondary font-semibold">Active</span>
+</div>
+<div class="flex items-center justify-between px-space-sm py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-outline">code</span> Figma Tokens JSON</span>
+<span class="text-secondary font-semibold">Active</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md">
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:underline font-medium" href="#exports">
+                Manage token maps <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Live Theme Preview Panel & Component Sandbox (5 Cols) -->
+<div class="col-span-12 lg:col-span-5 space-y-space-md sticky top-20">
+<!-- Live Preview Stage Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-md space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span>
+</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Live Component Preview</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase font-mono">Dynamic Render</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Inspecting interactive states, badges, and contrast performance under current palette attributes.
+          </p>
+<!-- The Live Persona Mini-Card Container -->
+<div class="rounded-xl p-space-md bg-surface-container-low shadow-sm transition-all duration-300 space-y-space-md" id="previewCard">
+<!-- Persona Header Strip -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-xl object-cover shadow-sm" data-alt="Modern high contrast portrait of a professional female fintech product strategist smiling confidently in a daylight studio setting, deep indigo and teal ambient tone" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaHAUKgzU--jpnrTaR8VjOf-jo_1q7Ik7iLAKjspPxdJq1tpi-CLuDWlmh6cCb9Xip2G5H_L1oDizdx_o41YWp8ZUog1hWmiDPnKIsT2zeOV6UK4jO8J4b6Bn9PTxlKIG-O8YHV2ER4DLRaHSQnY7Km20_W0G11U7-xlerIdlu_-BrDkUENV7Ajb_NgLEG_bTIuZXEGt_FsAWbNlVBmuzKKFpqZ6xQ8OuU8Ks7FqFL1mVszuMKIb_5"/>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Elena Rostova</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">Wealth Operations Lead • Series C Scale</span>
+</div>
+</div>
+<!-- Accent Warning Pill (Color: Accent) -->
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-label-sm font-semibold shadow-xs" id="previewAccentBadge" style="background-color: #FEF3C7; color: #B45309;">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+<span>High Churn Risk</span>
+</span>
+</div>
+<!-- Quote Blockquote with Secondary accent line -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-xs flex gap-space-sm items-start">
+<div class="w-1 self-stretch rounded-full" id="previewQuoteBar" style="background-color: #0F766E;"></div>
+<p class="font-body-sm text-body-sm text-on-surface italic">
+                “Our risk management teams cannot justify switching tools unless audit trail validation takes under three clicks.”
+              </p>
+</div>
+<!-- Evidence Confidence Metrics (Color: Secondary) -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between text-label-sm">
+<span class="font-label-sm text-on-surface-variant font-medium">Confidence Score</span>
+<span class="font-mono font-semibold" id="previewConfidenceText" style="color: #0F766E;">92% Verified Research</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full rounded-full transition-all duration-300" id="previewProgressBar" style="width: 92%; background-color: #0F766E;"></div>
+</div>
+<div class="flex justify-between items-center text-[10px] text-outline font-mono pt-0.5">
+<span>N=48 In-Depth Interviews</span>
+<span>Synthesized via 4 Waves</span>
+</div>
+</div>
+<!-- Actions Row inside Persona (Color: Primary) -->
+<div class="flex items-center justify-between pt-space-xs gap-space-sm">
+<div class="flex items-center gap-1.5">
+<!-- Verified Badge using Secondary Color -->
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[11px] font-semibold" id="previewVerifiedBadge" style="background-color: #E6FFFA; color: #0F766E;">
+<span class="material-symbols-outlined text-[13px]">verified_user</span>
+<span>Validated Persona</span>
+</span>
+</div>
+<button class="inline-flex items-center gap-1 px-space-md h-8 rounded-lg text-white font-label-md text-label-md font-medium shadow-sm transition-transform active:scale-95" id="previewPrimaryBtn" style="background-color: #4F46E5;" type="button">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Live Contrast & Accessibility Audit Widget -->
+<div class="p-space-md rounded-xl bg-surface-container-low space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Contrast Compliance Audit</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">Passed AAA</span>
+</div>
+<!-- Contrast metrics grid -->
+<div class="grid grid-cols-3 gap-space-xs text-center pt-space-xs">
+<div class="p-2 rounded-lg bg-surface-container-lowest shadow-xs">
+<span class="text-[10px] text-outline uppercase font-mono block">Primary / Bg</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-mono" id="contrastRatioPrimary">7.4 : 1</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">AAA Pass</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-lowest shadow-xs">
+<span class="text-[10px] text-outline uppercase font-mono block">Secondary / Pill</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-mono" id="contrastRatioSecondary">5.2 : 1</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">AA+ Pass</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-lowest shadow-xs">
+<span class="text-[10px] text-outline uppercase font-mono block">Accent / Text</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-mono" id="contrastRatioAccent">4.9 : 1</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">AA Pass</span>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">info</span>
+<span>Ratios dynamically calculated against <code>#FFFFFF</code> canvas for high-legibility enterprise dashboards.</span>
+</div>
+</div>
+<!-- Color Role Anatomy Breakdown -->
+<div class="space-y-space-xs pt-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Hierarchy Token Distribution</span>
+<div class="flex h-3 w-full rounded-full overflow-hidden shadow-inner">
+<div class="h-full transition-all duration-300" id="barPrimaryRatio" style="width: 60%; background-color: #4F46E5;" title="Primary (60%)"></div>
+<div class="h-full transition-all duration-300" id="barSecondaryRatio" style="width: 30%; background-color: #0F766E;" title="Secondary (30%)"></div>
+<div class="h-full transition-all duration-300" id="barAccentRatio" style="width: 10%; background-color: #F59E0B;" title="Accent (10%)"></div>
+</div>
+<div class="flex justify-between items-center text-[11px] font-mono text-on-surface-variant pt-1">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full inline-block" id="dotP" style="background-color: #4F46E5;"></span> Primary 60%</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full inline-block" id="dotS" style="background-color: #0F766E;"></span> Secondary 30%</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full inline-block" id="dotA" style="background-color: #F59E0B;"></span> Accent 10%</span>
+</div>
+</div>
+</div>
+<!-- Inline Notification Toast Placeholder -->
+<div class="hidden transition-all duration-300 p-space-md rounded-xl bg-inverse-surface text-inverse-on-surface shadow-xl flex items-center justify-between" id="toastMessage">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">check_circle</span>
+<span class="font-body-md text-body-md">Custom theme successfully applied &amp; saved!</span>
+</div>
+<button class="text-inverse-on-surface/80 hover:text-inverse-on-surface" onclick="document.getElementById('toastMessage').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Current Active Colors
+    let currentPrimary = '#4F46E5';
+    let currentSecondary = '#0F766E';
+    let currentAccent = '#F59E0B';
+
+    // Elements
+    const primaryInput = document.getElementById('primaryInput');
+    const primaryPicker = document.getElementById('primaryPicker');
+    const primarySwatch = document.getElementById('primarySwatch');
+
+    const secondaryInput = document.getElementById('secondaryInput');
+    const secondaryPicker = document.getElementById('secondaryPicker');
+    const secondarySwatch = document.getElementById('secondarySwatch');
+
+    const accentInput = document.getElementById('accentInput');
+    const accentPicker = document.getElementById('accentPicker');
+    const accentSwatch = document.getElementById('accentSwatch');
+
+    // Live Preview Targets
+    const previewPrimaryBtn = document.getElementById('previewPrimaryBtn');
+    const previewQuoteBar = document.getElementById('previewQuoteBar');
+    const previewProgressBar = document.getElementById('previewProgressBar');
+    const previewConfidenceText = document.getElementById('previewConfidenceText');
+    const previewVerifiedBadge = document.getElementById('previewVerifiedBadge');
+    const previewAccentBadge = document.getElementById('previewAccentBadge');
+
+    const barPrimaryRatio = document.getElementById('barPrimaryRatio');
+    const barSecondaryRatio = document.getElementById('barSecondaryRatio');
+    const barAccentRatio = document.getElementById('barAccentRatio');
+
+    const dotP = document.getElementById('dotP');
+    const dotS = document.getElementById('dotS');
+    const dotA = document.getElementById('dotA');
+
+    const toastMessage = document.getElementById('toastMessage');
+
+    // Update Preview Function
+    function updateTheme(p, s, a) {
+      currentPrimary = p;
+      currentSecondary = s;
+      currentAccent = a;
+
+      // Inputs & Swatches
+      primaryInput.value = p;
+      primaryPicker.value = p;
+      primarySwatch.style.backgroundColor = p;
+
+      secondaryInput.value = s;
+      secondaryPicker.value = s;
+      secondarySwatch.style.backgroundColor = s;
+
+      accentInput.value = a;
+      accentPicker.value = a;
+      accentSwatch.style.backgroundColor = a;
+
+      // Live Persona Preview Components
+      if (previewPrimaryBtn) previewPrimaryBtn.style.backgroundColor = p;
+      if (previewQuoteBar) previewQuoteBar.style.backgroundColor = s;
+      if (previewProgressBar) previewProgressBar.style.backgroundColor = s;
+      if (previewConfidenceText) previewConfidenceText.style.color = s;
+
+      // Badges
+      if (previewVerifiedBadge) {
+        previewVerifiedBadge.style.color = s;
+        previewVerifiedBadge.style.backgroundColor = s + '18'; // 10% opacity tint
+      }
+
+      if (previewAccentBadge) {
+        previewAccentBadge.style.color = a;
+        previewAccentBadge.style.backgroundColor = a + '20'; // 12% opacity tint
+      }
+
+      // Token Distribution Bars
+      if (barPrimaryRatio) barPrimaryRatio.style.backgroundColor = p;
+      if (barSecondaryRatio) barSecondaryRatio.style.backgroundColor = s;
+      if (barAccentRatio) barAccentRatio.style.backgroundColor = a;
+
+      if (dotP) dotP.style.backgroundColor = p;
+      if (dotS) dotS.style.backgroundColor = s;
+      if (dotA) dotA.style.backgroundColor = a;
+    }
+
+    // Preset Selection Logic
+    const presetButtons = document.querySelectorAll('.preset-card');
+    presetButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const p = btn.getAttribute('data-p');
+        const s = btn.getAttribute('data-s');
+        const a = btn.getAttribute('data-a');
+
+        presetButtons.forEach(b => {
+          const check = b.querySelector('.preset-check');
+          if (check) {
+            check.classList.add('hidden');
+          }
+        });
+
+        const activeCheck = btn.querySelector('.preset-check');
+        if (activeCheck) {
+          activeCheck.classList.remove('hidden');
+        }
+
+        updateTheme(p, s, a);
+      });
+    });
+
+    // Custom Pickers & Inputs Listeners
+    primaryPicker.addEventListener('input', (e) => {
+      updateTheme(e.target.value, currentSecondary, currentAccent);
+    });
+    primaryInput.addEventListener('change', (e) => {
+      let val = e.target.value;
+      if (!val.startsWith('#')) val = '#' + val;
+      if (/^#[0-9A-F]{6}$/i.test(val)) {
+        updateTheme(val, currentSecondary, currentAccent);
+      }
+    });
+
+    secondaryPicker.addEventListener('input', (e) => {
+      updateTheme(currentPrimary, e.target.value, currentAccent);
+    });
+    secondaryInput.addEventListener('change', (e) => {
+      let val = e.target.value;
+      if (!val.startsWith('#')) val = '#' + val;
+      if (/^#[0-9A-F]{6}$/i.test(val)) {
+        updateTheme(currentPrimary, val, currentAccent);
+      }
+    });
+
+    accentPicker.addEventListener('input', (e) => {
+      updateTheme(currentPrimary, currentSecondary, e.target.value);
+    });
+    accentInput.addEventListener('change', (e) => {
+      let val = e.target.value;
+      if (!val.startsWith('#')) val = '#' + val;
+      if (/^#[0-9A-F]{6}$/i.test(val)) {
+        updateTheme(currentPrimary, currentSecondary, val);
+      }
+    });
+
+    // Reset Defaults Action
+    function resetToDefault() {
+      updateTheme('#4F46E5', '#0F766E', '#F59E0B');
+      presetButtons.forEach(b => {
+        const isDefault = b.getAttribute('data-preset') === 'indigo';
+        const check = b.querySelector('.preset-check');
+        if (check) {
+          if (isDefault) check.classList.remove('hidden');
+          else check.classList.add('hidden');
+        }
+      });
+    }
+
+    const resetDefaultsBtn = document.getElementById('resetDefaultsBtn');
+    if (resetDefaultsBtn) resetDefaultsBtn.addEventListener('click', resetToDefault);
+
+    const resetTopBtn = document.getElementById('resetTopBtn');
+    if (resetTopBtn) resetTopBtn.addEventListener('click', resetToDefault);
+
+    // Save Notifications
+    function triggerSaveToast() {
+      if (toastMessage) {
+        toastMessage.classList.remove('hidden');
+        setTimeout(() => {
+          toastMessage.classList.add('hidden');
+        }, 3500);
+      }
+    }
+
+    const saveThemeBtn = document.getElementById('saveThemeBtn');
+    if (saveThemeBtn) saveThemeBtn.addEventListener('click', triggerSaveToast);
+
+    const saveTopBtn = document.getElementById('saveTopBtn');
+    if (saveTopBtn) saveTopBtn.addEventListener('click', triggerSaveToast);
+
+    // Initialize initial state
+    updateTheme('#4F46E5', '#0F766E', '#F59E0B');
+  })();
+</script></main></div>
+<script>
+(function(){
+  const root=document.documentElement;
+  try {
+    const theme=JSON.parse(localStorage.getItem('personaStudioTheme')||'null');
+    if(theme){
+      if(theme.primary) root.style.setProperty('--primary',theme.primary);
+      if(theme.secondary) root.style.setProperty('--secondary',theme.secondary);
+      if(theme.accent) root.style.setProperty('--accent',theme.accent);
+    }
+  } catch(e){}
+  document.querySelectorAll('a[data-path]').forEach(a=>{
+    const p=(a.getAttribute('data-path')||'').trim();
+    const routes={'dashboard':'index.html','projects':'projects.html','create-persona':'create-persona.html','persona-library':'persona-library.html','research-and-surveys':'research-insights.html','insights-and-analytics':'research-insights.html','compare-personas':'compare-personas.html','reports-and-exports':'reports.html','settings':'settings.html'};
+    if(routes[p]) a.href=routes[p];
+  });
+  document.querySelectorAll('form').forEach(form=>{
+    form.addEventListener('submit',function(e){
+      if(form.dataset.allowNative==='true') return;
+      e.preventDefault();
+      let note=form.querySelector('[data-integration-feedback]');
+      if(!note){note=document.createElement('p');note.dataset.integrationFeedback='true';note.className='mt-3 text-sm';form.appendChild(note)}
+      note.textContent='This screen is connected as a UI prototype. Persistent account, email, and server actions require backend configuration.';
+      note.setAttribute('role','status');
+    });
+  });
+})();
+</script>
+</body></html>

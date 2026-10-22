@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed":"#0f0069","surface-bright":"#f8f9ff","on-tertiary-fixed":"#2a1700","on-primary":"#ffffff","surface-container":"#e6eeff","primary-container":"#4f46e5","secondary":"#006a63","surface-dim":"#ccdbf3","background":"#f8f9ff","primary-fixed":"#e2dfff","inverse-primary":"#c3c0ff","on-surface-variant":"#464555","error":"#ba1a1a","on-primary-container":"#dad7ff","primary":"#3525cd","on-surface":"#0d1c2e","surface-tint":"#4d44e3","on-secondary-fixed-variant":"#00504a","on-tertiary-fixed-variant":"#653e00","primary-fixed-dim":"#c3c0ff","surface-container-highest":"#d5e3fc","surface-container-high":"#dce9ff","tertiary-container":"#885500","inverse-surface":"#233144","secondary-fixed":"#9cf2e8","inverse-on-surface":"#eaf1ff","on-background":"#0d1c2e","outline":"#777587","tertiary-fixed-dim":"#ffb95f","on-tertiary":"#ffffff","on-secondary-fixed":"#00201d","on-secondary-container":"#006f67","on-primary-fixed-variant":"#3323cc","outline-variant":"#c7c4d8","on-error-container":"#93000a","secondary-container":"#99efe5","error-container":"#ffdad6","on-error":"#ffffff","on-secondary":"#ffffff","surface-container-lowest":"#ffffff","surface":"#f8f9ff","surface-container-low":"#eff4ff","secondary-fixed-dim":"#80d5cb","tertiary-fixed":"#ffddb8","on-tertiary-container":"#ffd4a4","surface-variant":"#d5e3fc","tertiary":"#684000"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","gutter-lg":"2rem","margin-mobile":"1rem","gutter-sm":"1rem","gutter":"1.5rem","space-xs":"0.25rem","margin":"2rem","space-sm":"0.5rem","space-xl":"2rem","space-md":"1rem"},"fontFamily":{"headline-lg":["Inter"],"headline-sm":["Inter"],"headline-xl":["Inter"],"headline-md":["Inter"],"body-lg":["Inter"],"label-md":["Inter"],"body-md":["Inter"],"headline-xl-mobile":["Inter"],"label-sm":["Inter"],"body-sm":["Inter"]},"fontSize":{"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0","fontWeight":"400"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-[260px] bg-surface-container-lowest border-r border-outline-variant/40 z-50 flex flex-col justify-between select-none"><div class="flex flex-col flex-1 min-h-0"><div class="px-space-md py-space-md border-b border-outline-variant/30 flex items-center gap-space-sm"><img alt="Persona Studio Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VeT56ZrX5FIKjU7W3pvQom45vdo_jp7DQyvM7vTpFHOM3G1t6Zz_2x_puUzNF0RM1_NxYFq0sBrRbDN4rtuue2ArYmtLoulxhbwHHTNleCDYdOvu9Gw2FNz6krsHanOpfc_qlVG06_f3xIs2twC6g7UsVnrCKHRJl6VX1PV-LqQ8tbZHSQf85mPnarL9I3uk3CRSs-Y6KD-31Uk4_QSsSGSh3sgSx94GI-qAdbJow6-sFsnTitxnboLQ"/><div class="flex flex-col overflow-hidden"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate leading-tight">Persona Studio</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate font-normal">Research &amp; Persona Intelligence</span></div></div><nav class="flex-1 px-space-sm py-space-md overflow-y-auto space-y-space-xs" data-active-classes="bg-primary-container text-on-primary font-medium rounded-lg"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="dashboard" href="index.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Dashboard</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="projects" href="projects.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">folder_open</span><span class="font-body-md text-body-md">Projects</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="create-persona" href="create-persona.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">person_add</span><span class="font-body-md text-body-md">Create Persona</span></div><span class="material-symbols-outlined text-primary text-[18px]">add</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="persona-library" href="persona-library.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-body-md text-body-md">Persona Library</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="research-and-surveys" href="research-insights.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">quiz</span><span class="font-body-md text-body-md">Research &amp; Surveys</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="insights-and-analytics" href="research-insights.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">insights</span><span class="font-body-md text-body-md">Insights &amp; Analytics</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="compare-personas" href="compare-personas.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">compare_arrows</span><span class="font-body-md text-body-md">Compare Personas</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="reports-and-exports" href="reports.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">description</span><span class="font-body-md text-body-md">Reports &amp; Exports</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="settings" href="settings.html"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-body-md text-body-md">Settings</span></div></a></nav></div><div class="p-space-sm border-t border-outline-variant/30 space-y-space-sm bg-surface-container-lowest"><div class="px-space-sm py-space-xs rounded-lg bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-xs overflow-hidden"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">workspaces</span><span class="font-label-md text-label-md text-on-surface font-medium truncate">FinTech UX Workspace</span></div><span class="material-symbols-outlined text-[16px] text-on-surface-variant">unfold_more</span></div><div class="flex items-center justify-between px-space-sm py-space-xs"><div class="flex items-center gap-space-sm overflow-hidden"><img alt="Profile" class="w-8 h-8 rounded-full object-cover flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-pQs0EIfedPPV6rHB1qeYdlav5NPjetMfKgHJ53Czj-Vs3e82F7ZAgF2yM8aSvRBdxYW1kD_LpRfWboPhr6CIYdIiK0jZ_qs_JfQMVKxcUQJ8aGzwoFjZIu4cPkMlKdAqJRIEML6U2H1EcCK_X5kvbuBHt4Ad0pWDUpFcjLW2su9Zd1_HBla9TPf1-7uWKQa91YctZKv583RHnsb52gwjqAcKOHboBnif-W0IXo20eEGg-chDjLOI"/><div class="flex flex-col overflow-hidden"><span class="font-label-md text-label-md text-on-surface font-semibold truncate leading-tight">Elena Rostova</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate font-normal">Lead UX Researcher</span></div></div><button class="p-1 text-on-surface-variant hover:text-on-surface rounded hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">more_vert</span></button></div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md border-b border-outline-variant/30 z-40 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-xs text-on-surface-variant font-body-md text-body-md"><span class="hover:text-on-surface transition-colors cursor-pointer">Workspace</span><span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span><span class="text-on-surface font-medium">Dashboard</span></div><div class="flex items-center gap-space-md"><div class="relative flex items-center w-64"><span class="material-symbols-outlined absolute left-space-sm text-[18px] text-outline">search</span><input class="w-full h-9 pl-9 pr-12 rounded-lg bg-surface-container-low border border-outline-variant/40 text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container" placeholder="Search personas, insights..." type="text"/><span class="absolute right-space-sm font-label-sm text-label-sm bg-surface-container-high px-1.5 py-0.5 rounded text-on-surface-variant font-medium border border-outline-variant/50">⌘K</span></div><div class="h-5 w-[1px] bg-outline-variant/40"></div><button class="relative p-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-tertiary-fixed-dim ring-2 ring-surface-container-lowest"></span></button><a class="inline-flex items-center gap-space-xs h-9 px-space-md bg-primary-container hover:bg-primary text-on-primary rounded-lg font-label-md text-label-md font-medium shadow-sm transition-colors" data-path="create-persona" href="create-persona.html"><span class="material-symbols-outlined text-[18px]">add</span><span>Create Persona</span></a><div class="flex items-center gap-space-xs pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-pQs0EIfedPPV6rHB1qeYdlav5NPjetMfKgHJ53Czj-Vs3e82F7ZAgF2yM8aSvRBdxYW1kD_LpRfWboPhr6CIYdIiK0jZ_qs_JfQMVKxcUQJ8aGzwoFjZIu4cPkMlKdAqJRIEML6U2H1EcCK_X5kvbuBHt4Ad0pWDUpFcjLW2su9Zd1_HBla9TPf1-7uWKQa91YctZKv583RHnsb52gwjqAcKOHboBnif-W0IXo20eEGg-chDjLOI"/><span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span></div></div></header><main class="relative pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Command & Action Bar -->
+<section class="w-full px-margin py-space-lg flex flex-col gap-space-lg">
+<!-- Header Row -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col max-w-2xl">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest bg-secondary-container/40 text-on-secondary-container px-2 py-0.5 rounded">Repository v2.4</span>
+<span class="text-outline text-label-sm">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 Initiatives Online</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Projects &amp; Initiatives</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Organize research repositories, sprint objectives, and associated persona clusters</p>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="h-10 px-space-md rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-space-xs shadow-sm transition-all" id="importDataBtn">
+<span class="material-symbols-outlined text-[18px]">cloud_download</span>
+<span>Import Repos</span>
+</button>
+<button class="h-10 px-space-md rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md flex items-center gap-space-xs shadow-md shadow-primary/20 transition-all hover:scale-[1.01] active:scale-[0.99]" id="newProjectBtn">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>New Project</span>
+</button>
+</div>
+</div>
+<!-- Filter & Search Strip -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-space-sm bg-surface-container-lowest p-space-xs rounded-xl shadow-sm">
+<div class="flex items-center gap-1 overflow-x-auto p-1">
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md shadow-sm whitespace-nowrap">All (4)</button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md transition-colors whitespace-nowrap">Active (3)</button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md transition-colors whitespace-nowrap">In Review (1)</button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md transition-colors whitespace-nowrap">Archived</button>
+</div>
+<div class="flex items-center gap-space-sm px-2">
+<div class="relative flex items-center min-w-[240px]">
+<span class="material-symbols-outlined absolute left-2 text-[18px] text-outline">search</span>
+<input class="w-full h-8 pl-8 pr-3 bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded-lg focus:outline-none focus:bg-surface-container" placeholder="Filter projects or leads..." type="text"/>
+</div>
+<div class="h-4 w-px bg-surface-container"></div>
+<button class="h-8 w-8 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">filter_list</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Metric KPI Ribbon -->
+<section class="w-full px-margin pb-space-lg">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- KPI 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Initiatives</span>
+<span class="p-1.5 rounded-lg bg-primary/10 text-primary-container material-symbols-outlined text-[20px]">dataset</span>
+</div>
+<div class="mt-space-md flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-on-surface font-semibold">4</span>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container/30 px-1.5 py-0.5 rounded font-medium">3 In Progress</span>
+</div>
+<div class="mt-2 text-on-surface-variant font-body-sm text-body-sm">Active research programs</div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Personas Assigned</span>
+<span class="p-1.5 rounded-lg bg-secondary/10 text-secondary material-symbols-outlined text-[20px]">group</span>
+</div>
+<div class="mt-space-md flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-on-surface font-semibold">18</span>
+<span class="font-label-sm text-label-sm text-primary-container bg-primary-container/10 px-1.5 py-0.5 rounded font-medium">+3 this month</span>
+</div>
+<div class="mt-2 text-on-surface-variant font-body-sm text-body-sm">Mapped across 4 product verticals</div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Research Citations</span>
+<span class="p-1.5 rounded-lg bg-tertiary-container/10 text-tertiary material-symbols-outlined text-[20px]">fact_check</span>
+</div>
+<div class="mt-space-md flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-on-surface font-semibold">142</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-1.5 py-0.5 rounded font-medium">Notes &amp; Audio</span>
+</div>
+<div class="mt-2 text-on-surface-variant font-body-sm text-body-sm">Qualitative validation data points</div>
+</div>
+<!-- KPI 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Milestone Health</span>
+<span class="p-1.5 rounded-lg bg-secondary-container/40 text-on-secondary-container material-symbols-outlined text-[20px]">verified</span>
+</div>
+<div class="mt-space-md flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-on-surface font-semibold">94%</span>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container/40 px-1.5 py-0.5 rounded font-medium">Robust</span>
+</div>
+<div class="mt-2 text-on-surface-variant font-body-sm text-body-sm">Target validation criteria met</div>
+</div>
+</div>
+</section>
+<!-- 2x2 Project Grid -->
+<section class="w-full px-margin pb-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- Card 1: Retail Banking Redesign 2025 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+<div>
+<!-- Card Header & Badges -->
+<div class="flex items-start justify-between gap-space-md mb-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-medium inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Active Sprint
+                </span>
+<span class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm px-2.5 py-0.5 rounded-full inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">account_circle</span>
+                  Lead: Elena Rostova
+                </span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-1 group-hover:text-primary transition-colors">Retail Banking Redesign 2025</h2>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container-low text-on-surface-variant flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container-low text-on-surface-variant flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Description -->
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Modernizing consumer checking, autonomous savings goals, and emergency fund workflows for next-gen savers.</p>
+<!-- Linked Personas Segment -->
+<div class="mt-space-md pt-space-md bg-surface-container-low/40 p-space-sm rounded-xl">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Linked Personas (6)</span>
+<span class="font-label-sm text-label-sm text-primary-container font-medium hover:underline cursor-pointer">Explore cluster →</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex -space-x-2 overflow-hidden">
+<img class="inline-block h-8 w-8 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Close up photographic headshot of Sarah Chen, young female Asian fintech user smiling in modern daylight office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBClNkmAj7eT2ake4fWIK1o_XLPJ9-PmdgJxzULBF9l01WTZ8SmjPR_okR27gWcA5FxVfz1S6Udts4CWRksn6c0uKEF8M35iVrB1miXOswxedlH7NsfZ7gRIFVVuNzqKmn5Br64OH64f_lvPewIVcxvENtc9UjtOKBfqk-aWo-dEBo3jVd-5zUo7vv-hRtog7Xj3vmP3JH5NKcyU_9n9fsjkBRmsjTx8dh3ej-gWmJssoQGSFc7ZcpZ"/>
+<img class="inline-block h-8 w-8 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Portrait headshot of Elena Gomez, Hispanic female business professional wearing glasses in warm ambient workspace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFKZMEA3QIBnZ6UFjdmLiCY3wQr427Ds_vOPMsHYXC2a9CAWbxpVkbRQ6zy9SGDf16qNZ4c845xUhmy_N8n7d1xah64UCEbA3xhJpQKRTCe67-Pib72r_O4FkEr8VhveVW0a9qfNIiJuPP3LP2_yMynJeo9ECd1BSWvyER30IIwNEsgsgUUnRkkYEZlgJymayHrjbX2BexQ2yNQGx5XEfx-pVyEEpc_0o844g9VU_-50XWIz7AjkXT"/>
+<img class="inline-block h-8 w-8 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Studio portrait of Jamal Edwards, tech savvy young male user with casual navy sweater against light neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqi9M1BWEL5tPZYgk5fkk0qiOoK4AiFuz9XeRRwVebVu60lgZKs4XTnpt2RedYtjzEohzGemKziAlc0sm5fLk8JqCgt2-pQSywClLVgCBWKJgdmOMTXY6bK3LXUS67eoA1bSFJR2Ce0RPfCT_GD-jiIxgledYUsFpNlaPKnSQBxxxAVzn9k8-t9pA5vcNe4Aq94o0aD79FIPSoqOyjj9_W-EnweRMweOO5B8DdaDVGKqJoez6QOzs6"/>
+<img class="inline-block h-8 w-8 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Headshot of Chloe Martin, casual creative user with curly hair natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEZtN1RggkMPMtQ1QSH_1-NhOtd_rNNum0Tvt8ogaz8n2Z7NCKNw9uuGVF4IvosiJ3NWyVKRD99ve7tWcXXqJCAe3GjDLlcfZHL6xj99uPJxKMdm02cbJWRimSJg1dfG0Vri0lfsQvbTbRnmjDRq0iUThvnE2GwZkvluzmvP4TSyMY3YkMdHJOelXvbtITyfLXpdScHFw1ooBO-hC0-ISSkSq_FbIKd6Wo3TefOReMpfU83up74NIb"/>
+<div class="inline-flex h-8 w-8 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm items-center justify-center ring-2 ring-surface-container-lowest font-semibold">
+                  +2
+                </div>
+</div>
+<div class="text-on-surface-variant font-body-sm text-body-sm truncate pl-2">
+                Sarah C., Elena G., Jamal E. &amp; 3 others
+              </div>
+</div>
+</div>
+<!-- Research Coverage Stats -->
+<div class="mt-space-md grid grid-cols-3 gap-space-xs bg-surface-container-low p-space-sm rounded-xl">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">42</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Field Notes</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">18</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Transcripts</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold">92%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Evidence Score</span>
+</div>
+</div>
+<!-- Visual Progress Bar -->
+<div class="mt-space-sm">
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-2 rounded-full transition-all duration-500" style="width: 92%"></div>
+</div>
+</div>
+</div>
+<!-- Footer Meta & CTA -->
+<div class="mt-space-lg pt-space-sm flex items-center justify-between border-t border-surface-container-low">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>Last updated 2 hours ago</span>
+</div>
+<button class="h-9 px-space-md rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-on-primary text-primary-container font-label-md text-label-md flex items-center gap-1 transition-all group-hover:bg-primary-container group-hover:text-on-primary">
+<span>Open Workspace</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Global Merchant Portal -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+<div>
+<!-- Card Header & Badges -->
+<div class="flex items-start justify-between gap-space-md mb-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-medium inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                  In Synthesis
+                </span>
+<span class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm px-2.5 py-0.5 rounded-full inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">account_circle</span>
+                  Lead: David Miller
+                </span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-1 group-hover:text-primary transition-colors">Global Merchant Portal</h2>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container-low text-on-surface-variant flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container-low text-on-surface-variant flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Description -->
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">B2B payment processing, automated dispute resolution, and cross-border settlement tooling.</p>
+<!-- Linked Personas Segment -->
+<div class="mt-space-md pt-space-md bg-surface-container-low/40 p-space-sm rounded-xl">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Linked Personas (4)</span>
+<span class="font-label-sm text-label-sm text-primary-container font-medium hover:underline cursor-pointer">Explore cluster →</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex -space-x-2 overflow-hidden">
+<img class="inline-block h-8 w-8 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Portrait photo of Marcus Vance, mid-40s corporate treasurer in tailored suit looking confidently at camera in clean modern boardroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa-tjRl9ZmBVdzewh7Z7qywhC95tSvdNHmhlv_wrdUhRMo6qKvYNJwvzr3vJASNa_Wno2SOXevWAeof8u9x9bDO4OsUvaODV98ayBPs-gbFfZfSGbkg29UCDXGlpGrwzhL99AmHUejwUW6svt08zq66_iFxAHfIceS10sw4ZTlmcdEEe3kBEuAUJfuSYe92eQZQGwSxlvNt12vGV787HWMuVH_2LZMaPWwTjzyvdeoMZqG9fhLs6qJ"/>
+<img class="inline-block h-8 w-8 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Professional photo of David Miller, fintech operations analyst with wireframe glasses and slate gray shirt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTocXYXC1bwatQaKJtgY2RE7wrBjfP56tA_DsnZ1VD3iFam--BJLSMeco02b3RdihK_kW3ZuJX-2rODoVctyT8bqWK2omm1GvqA-X2NQuPYQCsji6F72L3ulPSnCG63Vl3UgY9Xht3b2IRI2lB3VQzG6OaBxnw9G7E31oS4Pd2fDijFacivT-B4kf1wgCCH5ZxtpWQg1WT50iqRZ0-aIUBny2QZr6guot54Kl4nLQxSr0bAswC7N_y"/>
+<img class="inline-block h-8 w-8 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Headshot of Sunita Rao, commerce lead woman in light office with blurred window architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBn-6VfE-HJDSpn8fxs1COmzao9v3IpmOan9tPwMuW4O8enlGNmEsuFDmPOEl98McogclmeozZ22p5K9Fo7CFi-2fTryv-VyXvuDd5GFuFsZ8tAfv_FK9Z6vg6F-MCPHZsqNiMR7l5gx1byqqobxyNVm4pljN_tIfWzQpBMi0IWlQzq6M44Mz6exjt5VdHErUkdHIpbaPSUrFJmcKqSPMkaJPB3Jj0Pxkwwgl1m30juvBOqYr42rB0g"/>
+<div class="inline-flex h-8 w-8 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm items-center justify-center ring-2 ring-surface-container-lowest font-semibold">
+                  +1
+                </div>
+</div>
+<div class="text-on-surface-variant font-body-sm text-body-sm truncate pl-2">
+                Marcus V., David M., Sunita R., &amp; 1 other
+              </div>
+</div>
+</div>
+<!-- Research Coverage Stats -->
+<div class="mt-space-md grid grid-cols-3 gap-space-xs bg-surface-container-low p-space-sm rounded-xl">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">31</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Field Notes</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">9</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Journey Maps</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary-container font-semibold">84%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Evidence Score</span>
+</div>
+</div>
+<!-- Visual Progress Bar -->
+<div class="mt-space-sm">
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-2 rounded-full transition-all duration-500" style="width: 84%"></div>
+</div>
+</div>
+</div>
+<!-- Footer Meta & CTA -->
+<div class="mt-space-lg pt-space-sm flex items-center justify-between border-t border-surface-container-low">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>Last updated Yesterday</span>
+</div>
+<button class="h-9 px-space-md rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-on-primary text-primary-container font-label-md text-label-md flex items-center gap-1 transition-all group-hover:bg-primary-container group-hover:text-on-primary">
+<span>Open Workspace</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card 3: Gen-Z Investing Micro-app -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+<div>
+<!-- Card Header & Badges -->
+<div class="flex items-start justify-between gap-space-md mb-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-medium inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Fieldwork Stage
+                </span>
+<span class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm px-2.5 py-0.5 rounded-full inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">account_circle</span>
+                  Lead: Alex Rivera
+                </span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-1 group-hover:text-primary transition-colors">Gen-Z Investing Micro-app</h2>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container-low text-on-surface-variant flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container-low text-on-surface-variant flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Description -->
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Gamified fractional equities, social portfolio replication, and visual financial literacy modules.</p>
+<!-- Linked Personas Segment -->
+<div class="mt-space-md pt-space-md bg-surface-container-low/40 p-space-sm rounded-xl">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Linked Personas (5)</span>
+<span class="font-label-sm text-label-sm text-primary-container font-medium hover:underline cursor-pointer">Explore cluster →</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex -space-x-2 overflow-hidden">
+<img class="inline-block h-8 w-8 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Candid authentic portrait photo of Aaliyah Patel, young South Asian Gen Z woman student holding phone, natural lighting and modern urban apartment interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvJXu_vraPKVT_0_jHm_ZaL89NnrptOYtnVdfB2ZvkbVgrZVhM1Pi1E2TqTt__eX4Fqvf5tIGR4Pflzst1uJvjdgFW12dlvlsjzYJ9h1Mhw0SgHJs73ng2IShIlf3piN0USUzd1SZIS1vGz8XCr263L1BI0usdiH0C_gY6mo4NCKDqZKDKgc9lrjzhiuhZdg_PTMOQ1L0N0JKiMXr00aurgBIfSLpbHCk95IXauz8Bc5bgzwAEz4gr"/>
+<img class="inline-block h-8 w-8 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Portrait of Leo Tanaka, college student gamer with casual oversized hoodie and headphones around neck" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGW4pOHYWF1RcKMPtb_kfee05vMqFvKr8DQ7FwUEXn92y7TCP9U6T1vUivshK-zAiSThrkjuUKTvnX3X4GvBaxhePhF7QUFJxrgb-aqwXYAIjR-SMUZxKtd3iUIwrkFeWIEPxV_vLG72ezsFBaOzm8UD0IBOlSvPKRoBG4PuU9pmV-_ASE0NalEg5DAQOND6bqL18LaYjtlhJIwqKP3z_15sSCinkSfCfd2xJ9jiIvEpB7H2PPPDgA"/>
+<img class="inline-block h-8 w-8 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Portrait photo of Maya Lin, young female digital artist smiling in loft studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB5yRNoforxyKzi6Sd1THP8nYtC7ttwzOgidIFJZPUxY1GYyE-DOsawG0MhdzoFcQbKf_bVJh60zWkwM6W-ssJ_LDK_7SUHnmgADdc0r7SNnJer7KOCw7kXYWZrCMNLQRT8ORaqfcS1-JYaJLnRA-oYTMAo9-2R1LDKhPGin2GiNJ9HiJPonpTr6iodNKGzhXFzsZtA_47RsjSoAw1j9JUWKmeX10rLMjP__AZ_v_7G3AbRhR4TiCP"/>
+<div class="inline-flex h-8 w-8 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm items-center justify-center ring-2 ring-surface-container-lowest font-semibold">
+                  +2
+                </div>
+</div>
+<div class="text-on-surface-variant font-body-sm text-body-sm truncate pl-2">
+                Aaliyah P., Leo T., Maya L., &amp; 2 others
+              </div>
+</div>
+</div>
+<!-- Research Coverage Stats -->
+<div class="mt-space-md grid grid-cols-3 gap-space-xs bg-surface-container-low p-space-sm rounded-xl">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">56</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Field Notes</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">32</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Diary Studies</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-tertiary font-semibold">78%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Evidence Score</span>
+</div>
+</div>
+<!-- Visual Progress Bar -->
+<div class="mt-space-sm">
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary-fixed-dim h-2 rounded-full transition-all duration-500" style="width: 78%"></div>
+</div>
+</div>
+</div>
+<!-- Footer Meta & CTA -->
+<div class="mt-space-lg pt-space-sm flex items-center justify-between border-t border-surface-container-low">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>Last updated 3 days ago</span>
+</div>
+<button class="h-9 px-space-md rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-on-primary text-primary-container font-label-md text-label-md flex items-center gap-1 transition-all group-hover:bg-primary-container group-hover:text-on-primary">
+<span>Open Workspace</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card 4: Institutional Wealth Desk -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+<div>
+<!-- Card Header & Badges -->
+<div class="flex items-start justify-between gap-space-md mb-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-medium inline-flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Active Sprint
+                </span>
+<span class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm px-2.5 py-0.5 rounded-full inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">account_circle</span>
+                  Lead: Liam O’Connor
+                </span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-1 group-hover:text-primary transition-colors">Institutional Wealth Desk</h2>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container-low text-on-surface-variant flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded-lg hover:bg-surface-container-low text-on-surface-variant flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Description -->
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Fiduciary reporting, multi-custodial portfolio synthesis, and compliance audit exports.</p>
+<!-- Linked Personas Segment -->
+<div class="mt-space-md pt-space-md bg-surface-container-low/40 p-space-sm rounded-xl">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Linked Personas (3)</span>
+<span class="font-label-sm text-label-sm text-primary-container font-medium hover:underline cursor-pointer">Explore cluster →</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex -space-x-2 overflow-hidden">
+<img class="inline-block h-8 w-8 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Headshot of mature male wealth manager Liam O'Connor in crisp tailored blue shirt with subtle gray hair" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVpjf0sdgH6nJpI_HKgJbbkEK3gdNM0nFRy29NaW5vYcBf7wwNx3JXgnd2K-en0fZM46-ruQYbKaLrwRkk0LV2utq9WL134byBcPyWZFoylepollDu4eVij8gsRZbMK0H8jTdrItRFj17_8_sAjzMW9XQQ2mgDQAu-AaguzPG6A4szn3LQR0HZQk8ig3v_JdHUyWVjBUwV8V9NaanshwRYS2enLG90nJbVoMlPZvcuw227jwzVde79"/>
+<img class="inline-block h-8 w-8 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Portrait photo of Katherine Ross, senior portfolio compliance officer in modern corporate architectural background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPrihF00emDWzdFIw8t8fbp1CbxPNi1Lnn2vdPIDfQQWBAqf2oU1SSNxMkmrin7i2obAV3tJKXsXiJpwSbeLJsvsN5pCRGdKsR9tUOHNRDS1KPoL_nANdbbjmYiVBw5S_uMahjTRkJLQ5YoGVxbf84mJRI5bJv7WsmIxS0N0aWbFUA5yxoNIQqDV-fUbSOTi9HA28nEgcmr_UOC6_KhR7ayJIz75AEblnfzldbgC72REmIE94v33kx"/>
+<img class="inline-block h-8 w-8 rounded-full ring-2 ring-surface-container-lowest object-cover" data-alt="Studio headshot of Arthur Pendelton, private banking director with focused analytical expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB58Sh6j-449Mi6y7qwev5MNcfCzo-tFDkKIErwFpY7TE6QUHlRIF6aWxpwj2JfYFNOB2Gm7glRgli3eMGv_yYJwQ5flFSbP_VWxESwQd4v5gcpApmZLpCd50hJhNwrv-4eGOqcIWrPsYurLzQCpcZMsuhod5pE3-huGjyFjt-EUPcq8BePnZNv-yNAHvjN505bEr0HjrbYP6fXofQJctM1XwIPiexKdlltiX-TXDyla-1z6wcDF26"/>
+</div>
+<div class="text-on-surface-variant font-body-sm text-body-sm truncate pl-2">
+                Liam O., Katherine R., Arthur P.
+              </div>
+</div>
+</div>
+<!-- Research Coverage Stats -->
+<div class="mt-space-md grid grid-cols-3 gap-space-xs bg-surface-container-low p-space-sm rounded-xl">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">28</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Transcripts</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">14</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Audit Logs</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-secondary font-semibold">95%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Evidence Score</span>
+</div>
+</div>
+<!-- Visual Progress Bar -->
+<div class="mt-space-sm">
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-2 rounded-full transition-all duration-500" style="width: 95%"></div>
+</div>
+</div>
+</div>
+<!-- Footer Meta & CTA -->
+<div class="mt-space-lg pt-space-sm flex items-center justify-between border-t border-surface-container-low">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>Last updated 5 days ago</span>
+</div>
+<button class="h-9 px-space-md rounded-lg bg-surface-container-low hover:bg-primary-container hover:text-on-primary text-primary-container font-label-md text-label-md flex items-center gap-1 transition-all group-hover:bg-primary-container group-hover:text-on-primary">
+<span>Open Workspace</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Import Integration Banner -->
+<section class="w-full px-margin pb-space-xl">
+<div class="relative overflow-hidden bg-gradient-to-r from-surface-container to-surface-container-high rounded-2xl p-space-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg shadow-sm">
+<div class="flex items-start gap-space-md max-w-3xl">
+<div class="p-3 bg-primary-container text-on-primary rounded-xl shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[28px]">sync_alt</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Starting a new research initiative?</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Import findings from Dovetail, UserTesting, Qualtrics, or standard CSV bundles in one click to map preliminary personas.</p>
+<div class="flex items-center gap-space-sm mt-3 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span> Auto-tag quotes</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span> Cluster sentiment</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span> Sync demographics</span>
+</div>
+</div>
+</div>
+<div class="shrink-0 flex items-center gap-space-sm w-full md:w-auto">
+<button class="h-10 px-space-md rounded-lg bg-surface-container-lowest hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center justify-center gap-space-xs shadow-sm w-full md:w-auto transition-colors">
+<span class="material-symbols-outlined text-[18px]">upload_file</span>
+<span>Import Data</span>
+</button>
+</div>
+</div>
+</section>
+<!-- New Project Modal (Hidden by default, triggered via JS) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden items-center justify-center p-4" id="modalBackdrop">
+<div class="bg-surface-container-lowest rounded-2xl max-w-lg w-full p-space-lg shadow-xl relative animate-in fade-in zoom-in duration-200">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<div class="p-2 rounded-lg bg-primary-container/10 text-primary-container">
+<span class="material-symbols-outlined text-[20px]">create_new_folder</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Create New Initiative</h3>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface p-1 rounded-lg hover:bg-surface-container-low transition-colors" id="closeModalBtn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="space-y-space-md">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Initiative Name</label>
+<input class="w-full h-10 px-3 bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md rounded-lg focus:outline-none focus:ring-1 focus:ring-primary-container" placeholder="e.g. SMB Lending Experience 2025" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Description &amp; Goals</label>
+<textarea class="w-full p-3 bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md rounded-lg focus:outline-none focus:ring-1 focus:ring-primary-container resize-none" placeholder="Primary user research objectives, sprint hypothesis, and core deliverables..." rows="3"></textarea>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Lead Researcher</label>
+<select class="w-full h-10 px-3 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:ring-1 focus:ring-primary-container">
+<option>Elena Rostova</option>
+<option>David Miller</option>
+<option>Alex Rivera</option>
+<option>Liam O’Connor</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Initial Status</label>
+<select class="w-full h-10 px-3 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:ring-1 focus:ring-primary-container">
+<option>Active Sprint</option>
+<option>In Synthesis</option>
+<option>Fieldwork Stage</option>
+</select>
+</div>
+</div>
+</div>
+<div class="mt-space-lg flex items-center justify-end gap-space-sm pt-space-sm border-t border-surface-container-low">
+<button class="h-10 px-space-md rounded-lg text-on-surface-variant hover:bg-surface-container-low font-label-md text-label-md transition-colors" id="cancelModalBtn">Cancel</button>
+<button class="h-10 px-space-md rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md transition-colors" id="submitModalBtn">Create Initiative</button>
+</div>
+</div>
+</div>
+<script>
+    (function() {
+      const modal = document.getElementById('modalBackdrop');
+      const newBtn = document.getElementById('newProjectBtn');
+      const closeBtn = document.getElementById('closeModalBtn');
+      const cancelBtn = document.getElementById('cancelModalBtn');
+      const submitBtn = document.getElementById('submitModalBtn');
+
+      function openModal() {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      }
+
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+
+      if (newBtn) newBtn.addEventListener('click', openModal);
+      if (closeBtn) closeBtn.addEventListener('click', closeModal);
+      if (cancelBtn) cancelBtn.addEventListener('click', closeModal);
+      if (submitBtn) {
+        submitBtn.addEventListener('click', function() {
+          closeModal();
+        });
+      }
+
+      if (modal) {
+        modal.addEventListener('click', function(e) {
+          if (e.target === modal) closeModal();
+        });
+      }
+    })();
+  </script>
+</div></main></div>
+<script>
+(function(){
+  const root=document.documentElement;
+  try {
+    const theme=JSON.parse(localStorage.getItem('personaStudioTheme')||'null');
+    if(theme){
+      if(theme.primary) root.style.setProperty('--primary',theme.primary);
+      if(theme.secondary) root.style.setProperty('--secondary',theme.secondary);
+      if(theme.accent) root.style.setProperty('--accent',theme.accent);
+    }
+  } catch(e){}
+  document.querySelectorAll('a[data-path]').forEach(a=>{
+    const p=(a.getAttribute('data-path')||'').trim();
+    const routes={'dashboard':'index.html','projects':'projects.html','create-persona':'create-persona.html','persona-library':'persona-library.html','research-and-surveys':'research-insights.html','insights-and-analytics':'research-insights.html','compare-personas':'compare-personas.html','reports-and-exports':'reports.html','settings':'settings.html'};
+    if(routes[p]) a.href=routes[p];
+  });
+  document.querySelectorAll('form').forEach(form=>{
+    form.addEventListener('submit',function(e){
+      if(form.dataset.allowNative==='true') return;
+      e.preventDefault();
+      let note=form.querySelector('[data-integration-feedback]');
+      if(!note){note=document.createElement('p');note.dataset.integrationFeedback='true';note.className='mt-3 text-sm';form.appendChild(note)}
+      note.textContent='This screen is connected as a UI prototype. Persistent account, email, and server actions require backend configuration.';
+      note.setAttribute('role','status');
+    });
+  });
+})();
+</script>
+</body></html>
